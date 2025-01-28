@@ -213,8 +213,25 @@ Definition iter := \n g x~n g x.
 
 (* La tester avec c4, la fonction csucc et c0. *)
 
-Compute equiv_lexp ( iter c0 csucc c0 ) c0.
+(* Tester 0 fois cn *)
+Compute equiv_lexp ( iter c0 csucc c1 ) c1.
+Compute equiv_lexp ( iter c0 csucc c2 ) c2.
+Compute equiv_lexp ( iter c0 csucc c3 ) c3.
+Compute equiv_lexp ( iter c0 csucc c4 ) c4.
+Compute equiv_lexp ( iter c0 csucc c5 ) c5.
+Compute equiv_lexp ( iter c0 csucc c6 ) c6.
+Compute equiv_lexp ( iter c0 csucc c7 ) c7.
+Compute equiv_lexp ( iter c0 csucc c8 ) c8.
+Compute equiv_lexp ( iter c0 csucc c9 ) c9.
+
+(* Tester n fois Cn *)
+Compute equiv_lexp ( iter c1 csucc c0 ) c1.
+Compute equiv_lexp ( iter c4 csucc c2 ) c6.
+Compute equiv_lexp ( iter c7 csucc c1 ) c8.
 Compute equiv_lexp ( iter c4 csucc c0 ) c4.
+Compute equiv_lexp ( iter c5 csucc c2 ) c7.
+Definition c18 := cadd c9 c9.
+Compute equiv_lexp ( iter c9 csucc c9 ) c18.
 
 (*
 Exercice 2 - Coder dans Coq la fonction cpred1 qui à partir d’un couple (x,y)
@@ -229,6 +246,8 @@ Tester cpred1 sur le codage du couple (1,2).
 
 Definition cpl12 := cpl c1 c2.
 Compute equiv_lexp ( cpred1 cpl12 ) (cpl c2 c3).
+Definition cpl75 := cpl c7 c5.
+Compute equiv_lexp ( cpred1 cpl75 ) (cpl c5 c6).
 
 
 (*
@@ -240,11 +259,17 @@ Definition cpred_simple := \n~fst (iter n cpred1 cpl00).
 (*
 Tester sur quelques exemples dont c0.
 *)
-Compute red_cbn (cpred c1).
 
+Compute equiv_lexp ( cpred c1 ) c0.
 Compute equiv_lexp ( cpred c2 ) c1.
-Compute ( ... )
-...
+Compute equiv_lexp ( cpred c3 ) c2.
+Compute equiv_lexp ( cpred c4 ) c3.
+Compute equiv_lexp ( cpred c5 ) c4.
+Compute equiv_lexp ( cpred c6 ) c5.
+Compute equiv_lexp ( cpred c7 ) c6.
+Compute equiv_lexp ( cpred c8 ) c7.
+Compute equiv_lexp ( cpred (cmult c5 c6) ) (cadd (cmult c3 c9) c2).
+
 
 (*********************************************************)
 (************ VII - Combinateur de point fixe ************)
@@ -253,7 +278,9 @@ Compute ( ... )
 Exercice 2 - Définir dans Coq  Y comme une lexp
 *)
 
-Definition Y := ...
+(* Definition Cn := \n~cif (ceq0 n) c0 (Cn (cpred cn)). *)
+
+Definition Y := \f~(\x~f (x x))(\x~f (x x)).
 
 (* 
    On peut vérifier ici que les deux exemples trouvés à l'exercice précédent
