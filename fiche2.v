@@ -25,10 +25,13 @@ Exercice 2 - Vérifier (en utilisant red cbn ou show cbn) que l’application de
              cif à vrai (ctr) et à faux (cfa) s’évalue correctement.
 *)
 
-Compute equiv_lexp (cif ctr x y) x. (* true *)
-Compute equiv_lexp (cif ctr x y) y. (* false *)
-Compute equiv_lexp (cif cfa x y) y. (* true *)
-Compute equiv_lexp (cif cfa x y) x. (* false *)
+(* Format equiv_lexp (expression) output-expectation *)
+
+(* Verifier cif + cond *)
+Compute equiv_lexp (cif ctr x y) x. 
+Compute equiv_lexp (cif ctr y x) y. 
+Compute equiv_lexp (cif cfa x y) y. 
+Compute equiv_lexp (cif cfa y x) x. 
 
 (*********************************************************)
 (********** II - Codage des opérateurs booléens **********)
@@ -47,10 +50,15 @@ Definition cnot :=  \b~\x y~b y x.
 Exercice 2 - Vérifier avec red_cbn ou show_cbn les tables de vérité de ces trois opérateurs
 *)
 
+(* Format equiv_lexp (expression) output-expectation *)
+(* Verifier cand par rapport a la table de verite *)
 Compute equiv_lexp ( cand ctr ctr ) ctr.
 Compute equiv_lexp ( cand cfa ctr ) cfa.
 Compute equiv_lexp ( cand ctr cfa ) cfa.
 Compute equiv_lexp ( cand cfa cfa ) cfa.
+
+(* Format equiv_lexp (expression) output-expectation *)
+(* Verifier cor par rapport a la table de verite *)
 Compute equiv_lexp ( cor ctr ctr ) ctr.
 Compute equiv_lexp ( cor cfa ctr ) ctr.
 Compute equiv_lexp ( cor ctr cfa ) ctr.
@@ -77,10 +85,12 @@ Exercice 2 - Coder dans Coq la fonction successeur d’un entier de Church comme
 
 Definition csucc := \n~\f x~f (n f x).
 
-Compute equiv_lexp (csucc c2) c3.
-Compute equiv_lexp (csucc c1) c2.
+(* Format equiv_lexp (expression) output-expectation *)
+(* Verifier cas c0 - c3 *)
 Compute equiv_lexp (csucc c0) c1.
-
+Compute equiv_lexp (csucc c1) c2.
+Compute equiv_lexp (csucc c2) c3.
+Compute equiv_lexp (csucc c3) (\f x~f (f (f (f x)))). (* equiv a c4 *)
 
 (*********************************************************)
 (************* IV - Opérations sur les entiers ***********)
@@ -92,16 +102,40 @@ Exercice 1 -  Coder dans Coq la fonction addition de deux entiers de Church comm
 
 Definition cadd := \n m~\f x~n f (m f x).
 
+(* Definir c4-c7 en utilisant csucc *)
 Definition c4 := csucc c3.
 Definition c5 := csucc c4.
 Definition c6 := csucc c5.
 Definition c7 := csucc c6.
+(* Reverifier csucc avec c6 *)
+Compute equiv_lexp (csucc c6) (\f x~f (f (f (f (f (f (f x))))))). (* equiv a c7 *)
+
+(* Verifier cas c0 + c0 *)
+Compute equiv_lexp ( cadd c0 c0 ) c0.
+
+(* Verifier cas c0 + ci, 2eme argument *)
 Compute equiv_lexp ( cadd c0 c1 ) c1.
+Compute equiv_lexp ( cadd c0 c2 ) c2.
+Compute equiv_lexp ( cadd c0 c3 ) c3.
+Compute equiv_lexp ( cadd c0 c4 ) c4.
+
+(* Verifier cas ci + c0, 1er argument *)
+Compute equiv_lexp ( cadd c5 c0 ) c5.
+Compute equiv_lexp ( cadd c6 c0 ) c6.
+Compute equiv_lexp ( cadd c7 c0 ) c7.
+Compute equiv_lexp ( cadd c2 c ) c5.
+
+(* Verifier cas general ci + cj *)
 Compute equiv_lexp ( cadd c1 c2 ) c3.
 Compute equiv_lexp ( cadd c2 c3 ) c5.
-Compute equiv_lexp ( cadd c3 c4 ) c7.
-Compute equiv_lexp ( cadd c3 c3 ) c5.
+Compute equiv_lexp ( cadd c2 c4 ) c6.
+Compute equiv_lexp ( cadd c5 c3 ) (csucc c7).
 
+(* Verifer cas cj + cj *)
+Compute equiv_lexp ( cadd c1 c1 ) c2.
+Compute equiv_lexp ( cadd c2 c2 ) c4.
+Compute equiv_lexp ( cadd c3 c3 ) c6.
+Compute equiv_lexp ( cadd c4 c4 ) (csucc c7).
 
 (*
 Exercice 2 -  Faire la même chose avec la multiplication de deux entiers de Church.
@@ -111,11 +145,38 @@ Definition cmult := \n m~\f~n (m f).
 
 Definition c8 := csucc c7.
 Definition c9 := csucc c8.
-Compute equiv_lexp ( cmult c2 c1 ) c2.
-Compute equiv_lexp ( cmult c1 c0 ) c0.
-Compute equiv_lexp ( cmult c2 c3 ) c6.
-Compute equiv_lexp ( cmult c3 c3 ) c9.
 
+
+(* Verifier cas c0 * cx et cx * c0 *)
+Compute equiv_lexp ( cmult c0 c0 ) c0.
+Compute equiv_lexp ( cmult c0 c1 ) c0.
+Compute equiv_lexp ( cmult c0 c2 ) c0.
+Compute equiv_lexp ( cmult c0 c3 ) c0.
+Compute equiv_lexp ( cmult c4 c0 ) c0.
+Compute equiv_lexp ( cmult c6 c0 ) c0.
+Compute equiv_lexp ( cmult c8 c0 ) c0.
+
+
+(* Verifier cas c1 * cx (identité multiplicative) *)
+Compute equiv_lexp ( cmult c1 c0 ) c0.
+Compute equiv_lexp ( cmult c1 c1 ) c1.
+Compute equiv_lexp ( cmult c1 c2 ) c2.
+Compute equiv_lexp ( cmult c1 c3 ) c3.
+Compute equiv_lexp ( cmult c1 c4 ) c4.
+Compute equiv_lexp ( cmult c5 c1 ) c5.
+Compute equiv_lexp ( cmult c6 c1 ) c6.
+Compute equiv_lexp ( cmult c7 c1 ) c7.
+Compute equiv_lexp ( cmult c8 c1 ) c8.
+
+
+(* Verifier cas général ci * cj *)
+Compute equiv_lexp ( cmult c2 c2 ) c4.
+Compute equiv_lexp ( cmult c2 c3 ) c6.
+Compute equiv_lexp ( cmult c2 c4 ) c8.
+Compute equiv_lexp ( cmult c3 c3 ) c9.
+Definition c12 := cadd c6 c6.
+Compute equiv_lexp ( cmult c3 c4 ) c12.
+Compute equiv_lexp ( cmult c4 c4 ) (cadd c12 c4).
 
 (*
 Exercice 3 -  Tester cadd et cmult sur des booléens. Les résultats ont-ils du sens ?
