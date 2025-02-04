@@ -1,0 +1,2720 @@
+DIGEST ff58a0d7c67e565569612a10e3498270
+FuntypedLC
+R15:17 Coq.Init.Nat <> <> lib
+R35:38 Coq.Lists.List <> <> lib
+R48:60 Coq.Lists.List ListNotations <> mod
+ind 492:497 <> letter
+constr 512:512 <> a
+constr 519:519 <> b
+constr 526:526 <> c
+constr 533:533 <> d
+constr 540:540 <> e
+constr 547:547 <> f
+constr 553:553 <> g
+constr 560:560 <> h
+constr 567:567 <> i
+constr 574:574 <> j
+constr 581:581 <> k
+constr 588:588 <> l
+constr 594:594 <> m
+constr 601:601 <> n
+constr 608:608 <> o
+constr 615:615 <> p
+constr 622:622 <> q
+constr 629:629 <> r
+constr 635:635 <> s
+constr 642:642 <> t
+constr 649:649 <> u
+constr 656:656 <> v
+constr 663:663 <> w
+constr 670:670 <> x
+constr 676:676 <> y
+constr 683:683 <> z
+constr 689:690 <> a1
+constr 696:697 <> b1
+constr 703:704 <> c1
+constr 710:711 <> d1
+constr 717:718 <> e1
+constr 724:725 <> f1
+constr 731:732 <> g1
+constr 738:739 <> h1
+constr 745:746 <> i1
+constr 752:753 <> j1
+constr 759:760 <> k1
+constr 766:767 <> l1
+constr 773:774 <> m1
+constr 780:781 <> n1
+constr 787:788 <> o1
+constr 794:795 <> p1
+constr 801:802 <> q1
+constr 808:809 <> r1
+constr 815:816 <> s1
+constr 822:823 <> t1
+constr 829:830 <> u1
+constr 836:837 <> v1
+constr 843:844 <> w1
+constr 850:851 <> x1
+constr 857:858 <> y1
+constr 864:865 <> z1
+constr 871:872 <> a2
+constr 878:879 <> b2
+constr 885:886 <> c2
+constr 892:893 <> d2
+constr 899:900 <> e2
+constr 906:907 <> f2
+constr 913:914 <> g2
+constr 920:921 <> h2
+constr 927:928 <> i2
+constr 934:935 <> j2
+constr 941:942 <> k2
+constr 948:949 <> l2
+constr 955:956 <> m2
+constr 962:963 <> n2
+constr 969:970 <> o2
+constr 976:977 <> p2
+constr 983:984 <> q2
+constr 990:991 <> r2
+constr 997:998 <> s2
+constr 1004:1005 <> t2
+constr 1011:1012 <> u2
+constr 1018:1019 <> v2
+constr 1025:1026 <> w2
+constr 1032:1033 <> x2
+constr 1039:1040 <> y2
+constr 1046:1047 <> z2
+def 1063:1075 <> nat_of_letter
+binder 1077:1077 <> x:3
+R1090:1090 untypedLC <> x:3 var
+R1101:1101 untypedLC <> a constr
+R1113:1113 untypedLC <> b constr
+R1125:1125 untypedLC <> c constr
+R1137:1137 untypedLC <> d constr
+R1149:1149 untypedLC <> e constr
+R1161:1161 untypedLC <> f constr
+R1174:1174 untypedLC <> g constr
+R1186:1186 untypedLC <> h constr
+R1198:1198 untypedLC <> i constr
+R1210:1210 untypedLC <> j constr
+R1222:1222 untypedLC <> k constr
+R1234:1234 untypedLC <> l constr
+R1247:1247 untypedLC <> m constr
+R1259:1259 untypedLC <> n constr
+R1271:1271 untypedLC <> o constr
+R1283:1283 untypedLC <> p constr
+R1295:1295 untypedLC <> q constr
+R1307:1307 untypedLC <> r constr
+R1320:1320 untypedLC <> s constr
+R1332:1332 untypedLC <> t constr
+R1344:1344 untypedLC <> u constr
+R1356:1356 untypedLC <> v constr
+R1368:1368 untypedLC <> w constr
+R1380:1380 untypedLC <> x constr
+R1393:1393 untypedLC <> y constr
+R1405:1405 untypedLC <> z constr
+R1418:1419 untypedLC <> a1 constr
+R1430:1431 untypedLC <> b1 constr
+R1442:1443 untypedLC <> c1 constr
+R1454:1455 untypedLC <> d1 constr
+R1466:1467 untypedLC <> e1 constr
+R1478:1479 untypedLC <> f1 constr
+R1491:1492 untypedLC <> g1 constr
+R1503:1504 untypedLC <> h1 constr
+R1515:1516 untypedLC <> i1 constr
+R1527:1528 untypedLC <> j1 constr
+R1539:1540 untypedLC <> k1 constr
+R1551:1552 untypedLC <> l1 constr
+R1564:1565 untypedLC <> m1 constr
+R1576:1577 untypedLC <> n1 constr
+R1588:1589 untypedLC <> o1 constr
+R1600:1601 untypedLC <> p1 constr
+R1612:1613 untypedLC <> q1 constr
+R1624:1625 untypedLC <> r1 constr
+R1637:1638 untypedLC <> s1 constr
+R1649:1650 untypedLC <> t1 constr
+R1661:1662 untypedLC <> u1 constr
+R1673:1674 untypedLC <> v1 constr
+R1685:1686 untypedLC <> w1 constr
+R1697:1698 untypedLC <> x1 constr
+R1710:1711 untypedLC <> y1 constr
+R1722:1723 untypedLC <> z1 constr
+R1735:1736 untypedLC <> a2 constr
+R1747:1748 untypedLC <> b2 constr
+R1759:1760 untypedLC <> c2 constr
+R1771:1772 untypedLC <> d2 constr
+R1783:1784 untypedLC <> e2 constr
+R1795:1796 untypedLC <> f2 constr
+R1808:1809 untypedLC <> g2 constr
+R1820:1821 untypedLC <> h2 constr
+R1832:1833 untypedLC <> i2 constr
+R1844:1845 untypedLC <> j2 constr
+R1856:1857 untypedLC <> k2 constr
+R1868:1869 untypedLC <> l2 constr
+R1881:1882 untypedLC <> m2 constr
+R1893:1894 untypedLC <> n2 constr
+R1905:1906 untypedLC <> o2 constr
+R1917:1918 untypedLC <> p2 constr
+R1929:1930 untypedLC <> q2 constr
+R1941:1942 untypedLC <> r2 constr
+R1954:1955 untypedLC <> s2 constr
+R1966:1967 untypedLC <> t2 constr
+R1978:1979 untypedLC <> u2 constr
+R1990:1991 untypedLC <> v2 constr
+R2002:2003 untypedLC <> w2 constr
+R2014:2015 untypedLC <> x2 constr
+R2027:2028 untypedLC <> y2 constr
+R2039:2040 untypedLC <> z2 constr
+def 2067:2079 <> letter_of_nat
+binder 2081:2082 <> nn:5
+R2095:2096 untypedLC <> nn:5 var
+R2114:2114 untypedLC <> a constr
+R2126:2126 untypedLC <> b constr
+R2138:2138 untypedLC <> c constr
+R2150:2150 untypedLC <> d constr
+R2162:2162 untypedLC <> e constr
+R2174:2174 untypedLC <> f constr
+R2187:2187 untypedLC <> g constr
+R2199:2199 untypedLC <> h constr
+R2211:2211 untypedLC <> i constr
+R2223:2223 untypedLC <> j constr
+R2235:2235 untypedLC <> k constr
+R2247:2247 untypedLC <> l constr
+R2260:2260 untypedLC <> m constr
+R2272:2272 untypedLC <> n constr
+R2284:2284 untypedLC <> o constr
+R2296:2296 untypedLC <> p constr
+R2308:2308 untypedLC <> q constr
+R2320:2320 untypedLC <> r constr
+R2333:2333 untypedLC <> s constr
+R2345:2345 untypedLC <> t constr
+R2357:2357 untypedLC <> u constr
+R2369:2369 untypedLC <> v constr
+R2381:2381 untypedLC <> w constr
+R2393:2393 untypedLC <> x constr
+R2406:2406 untypedLC <> y constr
+R2418:2418 untypedLC <> z constr
+R2430:2431 untypedLC <> a1 constr
+R2442:2443 untypedLC <> b1 constr
+R2454:2455 untypedLC <> c1 constr
+R2466:2467 untypedLC <> d1 constr
+R2478:2479 untypedLC <> e1 constr
+R2490:2491 untypedLC <> f1 constr
+R2503:2504 untypedLC <> g1 constr
+R2515:2516 untypedLC <> h1 constr
+R2527:2528 untypedLC <> i1 constr
+R2539:2540 untypedLC <> j1 constr
+R2551:2552 untypedLC <> k1 constr
+R2563:2564 untypedLC <> l1 constr
+R2576:2577 untypedLC <> m1 constr
+R2588:2589 untypedLC <> n1 constr
+R2600:2601 untypedLC <> o1 constr
+R2612:2613 untypedLC <> p1 constr
+R2624:2625 untypedLC <> q1 constr
+R2636:2637 untypedLC <> r1 constr
+R2649:2650 untypedLC <> s1 constr
+R2661:2662 untypedLC <> t1 constr
+R2673:2674 untypedLC <> u1 constr
+R2685:2686 untypedLC <> v1 constr
+R2697:2698 untypedLC <> w1 constr
+R2709:2710 untypedLC <> x1 constr
+R2722:2723 untypedLC <> y1 constr
+R2734:2735 untypedLC <> z1 constr
+R2747:2748 untypedLC <> a2 constr
+R2759:2760 untypedLC <> b2 constr
+R2771:2772 untypedLC <> c2 constr
+R2783:2784 untypedLC <> d2 constr
+R2795:2796 untypedLC <> e2 constr
+R2807:2808 untypedLC <> f2 constr
+R2820:2821 untypedLC <> g2 constr
+R2832:2833 untypedLC <> h2 constr
+R2844:2845 untypedLC <> i2 constr
+R2856:2857 untypedLC <> j2 constr
+R2868:2869 untypedLC <> k2 constr
+R2880:2881 untypedLC <> l2 constr
+R2893:2894 untypedLC <> m2 constr
+R2905:2906 untypedLC <> n2 constr
+R2917:2918 untypedLC <> o2 constr
+R2929:2930 untypedLC <> p2 constr
+R2941:2942 untypedLC <> q2 constr
+R2953:2954 untypedLC <> r2 constr
+R2966:2967 untypedLC <> s2 constr
+R2978:2979 untypedLC <> t2 constr
+R2990:2991 untypedLC <> u2 constr
+R3002:3003 untypedLC <> v2 constr
+R3014:3015 untypedLC <> w2 constr
+R3026:3027 untypedLC <> x2 constr
+R3039:3040 untypedLC <> y2 constr
+R3051:3052 untypedLC <> z2 constr
+R3063:3063 untypedLC <> a constr
+def 3095:3106 <> first_letter
+R3111:3111 untypedLC <> a constr
+def 3125:3135 <> card_letter
+ind 3162:3165 <> Name
+constr 3178:3181 <> Lett
+constr 3202:3206 <> Prime
+R3191:3194 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3185:3190 untypedLC <> letter ind
+R3195:3198 untypedLC <> Name:7 ind
+R3214:3217 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3210:3213 untypedLC <> Name:7 ind
+R3218:3221 untypedLC <> Name:7 ind
+R3226:3255 untypedLC <> Lett constr
+R3279:3283 untypedLC <> Prime constr
+not 3268:3268 <> :::x_'°'
+def 3327:3337 <> nat_of_Name
+binder 3339:3340 <> nn:9
+R3353:3354 untypedLC <> nn:9 var
+R3365:3368 untypedLC <> Lett constr
+R3376:3388 untypedLC <> nat_of_letter def
+R3397:3401 untypedLC <> Prime constr
+R3420:3422 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R3409:3419 untypedLC <> card_letter def
+R3423:3433 untypedLC <> nat_of_Name:10 def
+R3435:3436 untypedLC <> nn:9 var
+def 3457:3464 <> eqb_Name
+binder 3466:3467 <> ax:12
+binder 3469:3470 <> ay:13
+R3474:3477 Coq.Init.Datatypes <> bool ind
+R3482:3484 Coq.Init.Nat <> eqb def
+R3487:3497 untypedLC <> nat_of_Name def
+R3499:3500 untypedLC <> ax:12 var
+R3504:3514 untypedLC <> nat_of_Name def
+R3516:3517 untypedLC <> ay:13 var
+def 3552:3558 <> rot_nat
+binder 3560:3560 <> n:14
+R3572:3574 Coq.Init.Nat <> eqb def
+R3577:3577 Coq.Init.Datatypes <> S constr
+R3579:3579 untypedLC <> n:14 var
+R3582:3592 untypedLC <> card_letter def
+R3606:3606 Coq.Init.Datatypes <> S constr
+R3608:3608 untypedLC <> n:14 var
+R3599:3599 Coq.Init.Datatypes <> O constr
+def 3623:3632 <> rot_letter
+binder 3634:3634 <> x:15
+R3639:3651 untypedLC <> letter_of_nat def
+R3654:3660 untypedLC <> rot_nat def
+R3663:3675 untypedLC <> nat_of_letter def
+R3677:3677 untypedLC <> x:15 var
+def 3692:3700 <> next_name
+binder 3702:3703 <> nn:16
+R3716:3717 untypedLC <> nn:16 var
+R3728:3731 untypedLC <> Lett constr
+R3753:3759 untypedLC <> rot_nat def
+R3762:3774 untypedLC <> nat_of_letter def
+binder 3747:3748 <> rn:19
+R3793:3794 untypedLC <> rn:19 var
+R3807:3807 Coq.Init.Datatypes <> O constr
+R3812:3816 untypedLC <> Prime constr
+R3818:3829 untypedLC <> first_letter def
+R3842:3845 untypedLC <> Lett constr
+R3848:3860 untypedLC <> letter_of_nat def
+R3862:3863 untypedLC <> rn:19 var
+R3878:3882 untypedLC <> Prime constr
+R3890:3894 untypedLC <> Prime constr
+R3897:3905 untypedLC <> next_name:17 def
+R3907:3908 untypedLC <> nn:16 var
+def 3928:3936 <> gen_names
+binder 3939:3939 <> A:21
+R3954:3957 Coq.Init.Datatypes <> list ind
+R3959:3959 untypedLC <> A:21 var
+binder 3949:3950 <> ll:22
+binder 3962:3962 <> n:23
+R3966:3969 Coq.Init.Datatypes <> list ind
+R3971:3974 untypedLC <> Name ind
+R3987:3988 untypedLC <> ll:22 var
+R3999:4000 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4005:4005 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4007:4007 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4006:4006 untypedLC <> n:23 var
+R4014:4017 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4025:4028 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4024:4024 untypedLC <> n:23 var
+R4029:4037 untypedLC <> gen_names:24 def
+R4043:4051 untypedLC <> next_name def
+R4053:4053 untypedLC <> n:23 var
+R4039:4040 untypedLC <> ll:22 var
+def 4130:4135 <> mayrem
+R4141:4144 untypedLC <> Name ind
+binder 4138:4139 <> ax:26
+R4151:4154 Coq.Init.Datatypes <> list ind
+R4156:4159 untypedLC <> Name ind
+binder 4148:4149 <> ll:27
+R4164:4169 Coq.Init.Datatypes <> option ind
+R4172:4175 Coq.Init.Datatypes <> list ind
+R4177:4180 untypedLC <> Name ind
+R4194:4195 untypedLC <> ll:27 var
+R4206:4207 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4212:4215 Coq.Init.Datatypes <> None constr
+R4224:4227 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4245:4250 untypedLC <> mayrem:28 def
+R4252:4253 untypedLC <> ax:26 var
+R4270:4273 Coq.Init.Datatypes <> None constr
+R4281:4288 untypedLC <> eqb_Name def
+R4290:4291 untypedLC <> ax:26 var
+R4316:4319 Coq.Init.Datatypes <> None constr
+R4302:4305 Coq.Init.Datatypes <> Some constr
+R4327:4330 Coq.Init.Datatypes <> Some constr
+R4343:4350 untypedLC <> eqb_Name def
+R4352:4353 untypedLC <> ax:26 var
+R4379:4382 Coq.Init.Datatypes <> Some constr
+R4388:4391 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4364:4367 Coq.Init.Datatypes <> Some constr
+def 4546:4552 <> fresh_1
+R4560:4563 untypedLC <> Name ind
+binder 4555:4558 <> cand:30
+R4583:4586 Coq.Init.Datatypes <> list ind
+R4588:4591 untypedLC <> Name ind
+binder 4567:4572 <> lavoid:31
+binder 4574:4580 <> lstruct:32
+R4596:4599 untypedLC <> Name ind
+R4612:4618 untypedLC <> lstruct:32 var
+R4629:4630 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4635:4638 untypedLC <> cand:30 var
+R4645:4648 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4667:4672 untypedLC <> mayrem def
+R4674:4677 untypedLC <> cand:30 var
+R4679:4684 untypedLC <> lavoid:31 var
+R4714:4717 Coq.Init.Datatypes <> None constr
+R4722:4725 untypedLC <> cand:30 var
+R4750:4753 Coq.Init.Datatypes <> Some constr
+R4766:4772 untypedLC <> fresh_1:33 def
+R4775:4783 untypedLC <> next_name def
+R4785:4788 untypedLC <> cand:30 var
+def 4852:4856 <> fresh
+R4865:4868 Coq.Init.Datatypes <> list ind
+R4870:4873 untypedLC <> Name ind
+binder 4859:4863 <> avoid:35
+R4878:4881 untypedLC <> Name ind
+R4886:4892 untypedLC <> fresh_1 def
+R4894:4905 untypedLC <> first_letter def
+R4907:4911 untypedLC <> avoid:35 var
+R4913:4917 untypedLC <> avoid:35 var
+ind 5035:5038 <> lexp
+constr 5054:5056 <> Var
+constr 5077:5079 <> Lam
+constr 5108:5110 <> App
+R5064:5067 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5060:5063 untypedLC <> Name ind
+R5068:5071 untypedLC <> lexp:36 ind
+R5087:5090 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5083:5086 untypedLC <> Name ind
+R5095:5098 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5091:5094 untypedLC <> lexp:36 ind
+R5099:5102 untypedLC <> lexp:36 ind
+R5118:5121 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5114:5117 untypedLC <> lexp:36 ind
+R5126:5129 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5122:5125 untypedLC <> lexp:36 ind
+R5130:5133 untypedLC <> lexp:36 ind
+R5258:5260 untypedLC <> Lam constr
+R5268:5270 untypedLC <> Lam constr
+not 5239:5239 <> :::'\'_x_'..'_x_'~'_x
+R5393:5395 untypedLC <> Lam constr
+R5403:5405 untypedLC <> Lam constr
+not 5371:5371 <> :::'λ'_x_'..'_x_'~'_x
+R5530:5532 untypedLC <> Lam constr
+R5540:5542 untypedLC <> Lam constr
+not 5506:5506 <> :::'𝛌'_x_'..'_x_'~'_x
+R5667:5669 untypedLC <> Lam constr
+R5677:5679 untypedLC <> Lam constr
+not 5643:5643 <> :::'𝜆'_x_'..'_x_'~'_x
+R5804:5806 untypedLC <> Lam constr
+R5814:5816 untypedLC <> Lam constr
+not 5780:5780 <> :::'𝝀'_x_'..'_x_'~'_x
+R5941:5943 untypedLC <> Lam constr
+R5951:5953 untypedLC <> Lam constr
+not 5917:5917 <> :::'𝝺'_x_'..'_x_'~'_x
+R6078:6080 untypedLC <> Lam constr
+R6088:6090 untypedLC <> Lam constr
+not 6054:6054 <> :::'𝞴'_x_'..'_x_'~'_x
+R6260:6262 untypedLC <> Lam constr
+R6270:6272 untypedLC <> Lam constr
+not 6240:6240 <> :::'\'_x_'..'_x_'·'_x
+R6396:6398 untypedLC <> Lam constr
+R6406:6408 untypedLC <> Lam constr
+not 6373:6373 <> :::'λ'_x_'..'_x_'·'_x
+R6520:6522 untypedLC <> Lam constr
+R6530:6532 untypedLC <> Lam constr
+not 6495:6495 <> :::'𝛌'_x_'..'_x_'·'_x
+R6658:6660 untypedLC <> Lam constr
+R6668:6670 untypedLC <> Lam constr
+not 6633:6633 <> :::'𝜆'_x_'..'_x_'·'_x
+R6796:6798 untypedLC <> Lam constr
+R6806:6808 untypedLC <> Lam constr
+not 6771:6771 <> :::'𝝀'_x_'..'_x_'·'_x
+R6934:6936 untypedLC <> Lam constr
+R6944:6946 untypedLC <> Lam constr
+not 6909:6909 <> :::'𝝺'_x_'..'_x_'·'_x
+R7072:7074 untypedLC <> Lam constr
+R7082:7084 untypedLC <> Lam constr
+not 7047:7047 <> :::'𝞴'_x_'..'_x_'·'_x
+R7238:7240 untypedLC <> Lam constr
+R7248:7250 untypedLC <> Lam constr
+not 7218:7218 <> :::'\'_x_'..'_x_'·'_x
+R7374:7376 untypedLC <> Lam constr
+R7384:7386 untypedLC <> Lam constr
+not 7351:7351 <> :::'λ'_x_'..'_x_'·'_x
+R7512:7514 untypedLC <> Lam constr
+R7522:7524 untypedLC <> Lam constr
+not 7487:7487 <> :::'𝛌'_x_'..'_x_'·'_x
+R7650:7652 untypedLC <> Lam constr
+R7660:7662 untypedLC <> Lam constr
+not 7625:7625 <> :::'𝜆'_x_'..'_x_'·'_x
+R7788:7790 untypedLC <> Lam constr
+R7798:7800 untypedLC <> Lam constr
+not 7763:7763 <> :::'𝝀'_x_'..'_x_'·'_x
+R7926:7928 untypedLC <> Lam constr
+R7936:7938 untypedLC <> Lam constr
+not 7901:7901 <> :::'𝝺'_x_'..'_x_'·'_x
+R8064:8066 untypedLC <> Lam constr
+R8074:8076 untypedLC <> Lam constr
+not 8039:8039 <> :::'𝞴'_x_'..'_x_'·'_x
+R8235:8237 untypedLC <> Lam constr
+R8245:8247 untypedLC <> Lam constr
+not 8214:8214 <> :::'\'_x_'..'_x_'・'_x
+R8372:8374 untypedLC <> Lam constr
+R8382:8384 untypedLC <> Lam constr
+not 8348:8348 <> :::'λ'_x_'..'_x_'・'_x
+R8511:8513 untypedLC <> Lam constr
+R8521:8523 untypedLC <> Lam constr
+not 8485:8485 <> :::'𝛌'_x_'..'_x_'・'_x
+R8650:8652 untypedLC <> Lam constr
+R8660:8662 untypedLC <> Lam constr
+not 8624:8624 <> :::'𝜆'_x_'..'_x_'・'_x
+R8789:8791 untypedLC <> Lam constr
+R8799:8801 untypedLC <> Lam constr
+not 8763:8763 <> :::'𝝀'_x_'..'_x_'・'_x
+R8928:8930 untypedLC <> Lam constr
+R8938:8940 untypedLC <> Lam constr
+not 8902:8902 <> :::'𝝺'_x_'..'_x_'・'_x
+R9067:9069 untypedLC <> Lam constr
+R9077:9079 untypedLC <> Lam constr
+not 9041:9041 <> :::'𝞴'_x_'..'_x_'・'_x
+R9237:9239 untypedLC <> Lam constr
+R9247:9249 untypedLC <> Lam constr
+not 9216:9216 <> :::'\'_x_'..'_x_'᛫'_x
+R9374:9376 untypedLC <> Lam constr
+R9384:9386 untypedLC <> Lam constr
+not 9350:9350 <> :::'λ'_x_'..'_x_'᛫'_x
+R9513:9515 untypedLC <> Lam constr
+R9523:9525 untypedLC <> Lam constr
+not 9487:9487 <> :::'𝛌'_x_'..'_x_'᛫'_x
+R9652:9654 untypedLC <> Lam constr
+R9662:9664 untypedLC <> Lam constr
+not 9626:9626 <> :::'𝜆'_x_'..'_x_'᛫'_x
+R9791:9793 untypedLC <> Lam constr
+R9801:9803 untypedLC <> Lam constr
+not 9765:9765 <> :::'𝝀'_x_'..'_x_'᛫'_x
+R9930:9932 untypedLC <> Lam constr
+R9940:9942 untypedLC <> Lam constr
+not 9904:9904 <> :::'𝝺'_x_'..'_x_'᛫'_x
+R10069:10071 untypedLC <> Lam constr
+R10079:10081 untypedLC <> Lam constr
+not 10043:10043 <> :::'𝞴'_x_'..'_x_'᛫'_x
+R10245:10247 untypedLC <> Lam constr
+R10255:10257 untypedLC <> Lam constr
+not 10224:10224 <> :::'\'_x_'..'_x_'⋅'_x
+R10382:10384 untypedLC <> Lam constr
+R10392:10394 untypedLC <> Lam constr
+not 10358:10358 <> :::'λ'_x_'..'_x_'⋅'_x
+R10521:10523 untypedLC <> Lam constr
+R10531:10533 untypedLC <> Lam constr
+not 10495:10495 <> :::'𝛌'_x_'..'_x_'⋅'_x
+R10660:10662 untypedLC <> Lam constr
+R10670:10672 untypedLC <> Lam constr
+not 10634:10634 <> :::'𝜆'_x_'..'_x_'⋅'_x
+R10799:10801 untypedLC <> Lam constr
+R10809:10811 untypedLC <> Lam constr
+not 10773:10773 <> :::'𝝀'_x_'..'_x_'⋅'_x
+R10938:10940 untypedLC <> Lam constr
+R10948:10950 untypedLC <> Lam constr
+not 10912:10912 <> :::'𝝺'_x_'..'_x_'⋅'_x
+R11077:11079 untypedLC <> Lam constr
+R11087:11089 untypedLC <> Lam constr
+not 11051:11051 <> :::'𝞴'_x_'..'_x_'⋅'_x
+R11182:11208 untypedLC <> Var constr
+R11212:11242 untypedLC <> App constr
+def 11550:11552 <> mem
+R11558:11561 untypedLC <> Name ind
+binder 11555:11556 <> ax:38
+R11568:11571 Coq.Init.Datatypes <> list ind
+R11573:11576 untypedLC <> Name ind
+binder 11565:11566 <> xx:39
+R11581:11584 Coq.Init.Datatypes <> bool ind
+R11597:11598 untypedLC <> xx:39 var
+R11609:11610 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11615:11619 Coq.Init.Datatypes <> false constr
+R11628:11631 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11642:11649 untypedLC <> eqb_Name def
+R11651:11652 untypedLC <> ax:38 var
+R11673:11675 untypedLC <> mem:40 def
+R11677:11678 untypedLC <> ax:38 var
+R11663:11666 Coq.Init.Datatypes <> true constr
+def 11741:11743 <> rem
+R11749:11752 untypedLC <> Name ind
+binder 11746:11747 <> ax:42
+R11759:11762 Coq.Init.Datatypes <> list ind
+R11764:11767 untypedLC <> Name ind
+binder 11756:11757 <> xx:43
+R11772:11775 Coq.Init.Datatypes <> list ind
+R11777:11780 untypedLC <> Name ind
+R11793:11794 untypedLC <> xx:43 var
+R11805:11806 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11811:11812 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11821:11824 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11835:11842 untypedLC <> eqb_Name def
+R11844:11845 untypedLC <> ax:42 var
+R11893:11896 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11897:11899 untypedLC <> rem:44 def
+R11901:11902 untypedLC <> ax:42 var
+R11856:11858 untypedLC <> rem:44 def
+R11860:11861 untypedLC <> ax:42 var
+def 11969:11976 <> make_set
+binder 11978:11979 <> xx:46
+R11983:11986 Coq.Init.Datatypes <> list ind
+R11988:11991 untypedLC <> Name ind
+R12004:12005 untypedLC <> xx:46 var
+R12016:12017 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12022:12023 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12031:12034 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12045:12047 untypedLC <> mem def
+R12098:12102 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12115:12115 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12103:12110 untypedLC <> make_set:47 def
+R12061:12068 untypedLC <> make_set:47 def
+def 12175:12181 <> inter_1
+binder 12183:12184 <> xx:49
+binder 12186:12187 <> yx:50
+R12191:12194 Coq.Init.Datatypes <> list ind
+R12196:12199 untypedLC <> Name ind
+R12212:12213 untypedLC <> xx:49 var
+R12224:12225 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12230:12231 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12239:12242 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12253:12255 untypedLC <> mem def
+R12260:12261 untypedLC <> yx:50 var
+R12311:12317 untypedLC <> inter_1:51 def
+R12323:12324 untypedLC <> yx:50 var
+R12270:12273 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12274:12280 untypedLC <> inter_1:51 def
+R12286:12287 untypedLC <> yx:50 var
+def 12345:12349 <> inter
+binder 12351:12352 <> xx:53
+binder 12354:12355 <> yx:54
+R12359:12362 Coq.Init.Datatypes <> list ind
+R12364:12367 untypedLC <> Name ind
+R12372:12378 untypedLC <> inter_1 def
+R12381:12388 untypedLC <> make_set def
+R12390:12391 untypedLC <> xx:53 var
+R12394:12395 untypedLC <> yx:54 var
+def 12448:12454 <> allvars
+binder 12456:12457 <> ex:55
+R12461:12464 Coq.Init.Datatypes <> list ind
+R12466:12469 untypedLC <> Name ind
+R12482:12483 untypedLC <> ex:55 var
+R12494:12496 untypedLC <> Var constr
+R12504:12504 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12507:12507 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12513:12515 untypedLC <> Lam constr
+R12520:12521 Coq.Init.Logic <> ex ind
+R12528:12532 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12543:12543 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12533:12539 untypedLC <> allvars:56 def
+R12541:12542 untypedLC <> ex:55 var
+R12549:12551 untypedLC <> App constr
+R12557:12559 Coq.Init.Logic <> ex2 ind
+R12575:12578 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12564:12570 untypedLC <> allvars:56 def
+R12579:12585 untypedLC <> allvars:56 def
+def 12610:12613 <> vars
+binder 12615:12616 <> ex:58
+R12621:12628 untypedLC <> make_set def
+R12631:12637 untypedLC <> allvars def
+R12639:12640 untypedLC <> ex:58 var
+def 12716:12723 <> freevars
+binder 12725:12726 <> ex:59
+R12730:12733 Coq.Init.Datatypes <> list ind
+R12735:12738 untypedLC <> Name ind
+R12751:12752 untypedLC <> ex:59 var
+R12763:12765 untypedLC <> Var constr
+R12773:12773 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12776:12776 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12782:12784 untypedLC <> Lam constr
+R12789:12790 Coq.Init.Logic <> ex ind
+R12795:12797 untypedLC <> rem def
+R12803:12810 untypedLC <> freevars:60 def
+R12812:12813 untypedLC <> ex:59 var
+R12820:12822 untypedLC <> App constr
+R12828:12830 Coq.Init.Logic <> ex2 ind
+R12847:12850 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12835:12842 untypedLC <> freevars:60 def
+R12851:12858 untypedLC <> freevars:60 def
+def 12883:12889 <> vlibres
+binder 12891:12892 <> ex:62
+R12897:12904 untypedLC <> make_set def
+R12907:12914 untypedLC <> freevars def
+R12916:12917 untypedLC <> ex:62 var
+def 12994:13002 <> boundvars
+binder 13004:13005 <> ex:63
+R13009:13012 Coq.Init.Datatypes <> list ind
+R13014:13017 untypedLC <> Name ind
+R13030:13031 untypedLC <> ex:63 var
+R13042:13044 untypedLC <> Var constr
+R13052:13053 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R13059:13061 untypedLC <> Lam constr
+R13066:13067 Coq.Init.Logic <> ex ind
+R13075:13077 untypedLC <> mem def
+R13083:13090 untypedLC <> freevars def
+R13092:13093 untypedLC <> ex:63 var
+R13144:13152 untypedLC <> boundvars:64 def
+R13154:13155 untypedLC <> ex:63 var
+R13103:13107 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13120:13120 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13108:13116 untypedLC <> boundvars:64 def
+R13118:13119 untypedLC <> ex:63 var
+R13161:13163 untypedLC <> App constr
+R13169:13171 Coq.Init.Logic <> ex2 ind
+R13189:13192 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13176:13184 untypedLC <> boundvars:64 def
+R13193:13201 untypedLC <> boundvars:64 def
+def 13226:13231 <> vliees
+binder 13233:13234 <> ex:66
+R13239:13246 untypedLC <> make_set def
+R13249:13257 untypedLC <> boundvars def
+R13259:13260 untypedLC <> ex:66 var
+def 13274:13285 <> declaredvars
+binder 13287:13288 <> ex:67
+R13292:13295 Coq.Init.Datatypes <> list ind
+R13297:13300 untypedLC <> Name ind
+R13313:13314 untypedLC <> ex:67 var
+R13325:13327 untypedLC <> Var constr
+R13335:13336 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R13342:13344 untypedLC <> Lam constr
+R13349:13350 Coq.Init.Logic <> ex ind
+R13357:13361 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13377:13377 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13362:13373 untypedLC <> declaredvars:68 def
+R13375:13376 untypedLC <> ex:67 var
+R13383:13385 untypedLC <> App constr
+R13391:13393 Coq.Init.Logic <> ex2 ind
+R13414:13417 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13398:13409 untypedLC <> declaredvars:68 def
+R13418:13429 untypedLC <> declaredvars:68 def
+def 13454:13457 <> vdef
+binder 13459:13460 <> ex:70
+R13465:13472 untypedLC <> make_set def
+R13475:13486 untypedLC <> declaredvars def
+R13488:13489 untypedLC <> ex:70 var
+def 13635:13640 <> rename
+binder 13642:13643 <> ny:71
+binder 13645:13646 <> nz:72
+binder 13648:13649 <> ex:73
+R13652:13655 untypedLC <> lexp ind
+R13668:13669 untypedLC <> ex:73 var
+R13680:13682 untypedLC <> Var constr
+R13698:13705 untypedLC <> eqb_Name def
+R13710:13711 untypedLC <> ny:71 var
+R13730:13731 untypedLC <> ex:73 var
+R13718:13720 untypedLC <> Var constr
+R13722:13723 untypedLC <> nz:72 var
+R13737:13739 untypedLC <> Lam constr
+R13755:13762 untypedLC <> eqb_Name def
+R13767:13768 untypedLC <> ny:71 var
+R13804:13806 untypedLC <> Lam constr
+R13812:13817 untypedLC <> rename:74 def
+R13822:13823 untypedLC <> nz:72 var
+R13819:13820 untypedLC <> ny:71 var
+R13775:13776 untypedLC <> ex:73 var
+R13834:13836 untypedLC <> App constr
+R13842:13844 Coq.Init.Logic <> ex2 ind
+R13849:13851 untypedLC <> App constr
+R13854:13859 untypedLC <> rename:74 def
+R13864:13865 untypedLC <> nz:72 var
+R13861:13862 untypedLC <> ny:71 var
+R13873:13878 untypedLC <> rename:74 def
+R13883:13884 untypedLC <> nz:72 var
+R13880:13881 untypedLC <> ny:71 var
+def 14045:14049 <> alpha
+binder 14051:14052 <> ny:76
+binder 14054:14055 <> nz:77
+binder 14057:14058 <> ex:78
+R14061:14064 untypedLC <> lexp ind
+R14077:14078 untypedLC <> ex:78 var
+R14089:14091 untypedLC <> Var constr
+R14104:14106 untypedLC <> Var constr
+R14115:14117 untypedLC <> Lam constr
+R14141:14145 untypedLC <> alpha:79 def
+R14150:14151 untypedLC <> nz:77 var
+R14147:14148 untypedLC <> ny:76 var
+binder 14134:14136 <> ex2:81
+R14182:14189 untypedLC <> eqb_Name def
+R14194:14195 untypedLC <> ny:76 var
+R14252:14254 untypedLC <> Lam constr
+R14259:14261 untypedLC <> ex2:81 var
+R14202:14204 untypedLC <> Lam constr
+R14206:14207 untypedLC <> nz:77 var
+R14210:14215 untypedLC <> rename def
+R14220:14221 untypedLC <> nz:77 var
+R14223:14225 untypedLC <> ex2:81 var
+R14267:14269 untypedLC <> App constr
+R14275:14277 Coq.Init.Logic <> ex2 ind
+R14282:14284 untypedLC <> App constr
+R14287:14291 untypedLC <> alpha:79 def
+R14296:14297 untypedLC <> nz:77 var
+R14293:14294 untypedLC <> ny:76 var
+R14305:14309 untypedLC <> alpha:79 def
+R14314:14315 untypedLC <> nz:77 var
+R14311:14312 untypedLC <> ny:76 var
+def 14410:14417 <> renaming
+binder 14419:14420 <> fv:82
+binder 14422:14426 <> avoid:83
+binder 14428:14429 <> ex:84
+R14442:14443 untypedLC <> fv:82 var
+R14454:14455 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R14460:14461 untypedLC <> ex:84 var
+R14469:14472 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R14501:14505 untypedLC <> fresh def
+R14507:14511 untypedLC <> avoid:83 var
+binder 14488:14496 <> freshname:87
+R14520:14527 untypedLC <> renaming:85 def
+R14555:14559 untypedLC <> alpha def
+R14564:14572 untypedLC <> freshname:87 var
+R14574:14575 untypedLC <> ex:84 var
+R14543:14546 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R14534:14542 untypedLC <> freshname:87 var
+R14547:14551 untypedLC <> avoid:83 var
+def 14666:14672 <> subst_1
+binder 14674:14675 <> nz:88
+binder 14677:14679 <> ex2:89
+binder 14681:14683 <> ex1:90
+R14686:14689 untypedLC <> lexp ind
+R14702:14704 untypedLC <> ex1:90 var
+R14715:14717 untypedLC <> Var constr
+R14735:14742 untypedLC <> eqb_Name def
+R14747:14748 untypedLC <> nz:88 var
+R14764:14766 untypedLC <> ex1:90 var
+R14755:14757 untypedLC <> ex2:89 var
+R14772:14774 untypedLC <> Lam constr
+R14779:14780 Coq.Init.Logic <> ex ind
+R14792:14799 untypedLC <> eqb_Name def
+R14804:14805 untypedLC <> nz:88 var
+R14842:14844 untypedLC <> Lam constr
+R14850:14856 untypedLC <> subst_1:91 def
+R14861:14863 untypedLC <> ex2:89 var
+R14858:14859 untypedLC <> nz:88 var
+R14812:14814 untypedLC <> ex1:90 var
+R14873:14875 untypedLC <> App constr
+R14890:14892 untypedLC <> App constr
+R14895:14901 untypedLC <> subst_1:91 def
+R14906:14908 untypedLC <> ex2:89 var
+R14903:14904 untypedLC <> nz:88 var
+R14917:14923 untypedLC <> subst_1:91 def
+R14928:14930 untypedLC <> ex2:89 var
+R14925:14926 untypedLC <> nz:88 var
+def 15028:15032 <> subst
+binder 15034:15035 <> nx:93
+binder 15037:15039 <> ex2:94
+binder 15041:15043 <> ex1:95
+R15047:15050 untypedLC <> lexp ind
+R15067:15073 untypedLC <> vlibres def
+R15075:15077 untypedLC <> ex2:94 var
+binder 15061:15062 <> vx:96
+R15097:15103 untypedLC <> allvars def
+R15105:15107 untypedLC <> ex1:95 var
+binder 15088:15092 <> avoid:97
+R15114:15120 untypedLC <> subst_1 def
+R15122:15123 untypedLC <> nx:93 var
+R15125:15127 untypedLC <> ex2:94 var
+R15130:15137 untypedLC <> renaming def
+R15139:15140 untypedLC <> vx:96 var
+R15142:15146 untypedLC <> avoid:97 var
+R15148:15150 untypedLC <> ex1:95 var
+def 15508:15514 <> redexes
+binder 15517:15518 <> ex:98
+R15522:15525 Coq.Init.Datatypes <> list ind
+R15527:15530 untypedLC <> lexp ind
+R15543:15544 untypedLC <> ex:98 var
+R15555:15557 untypedLC <> Var constr
+R15577:15578 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R15584:15586 untypedLC <> App constr
+R15589:15591 untypedLC <> Lam constr
+R15606:15606 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R15625:15630 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R15655:15655 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R15607:15609 untypedLC <> App constr
+R15612:15614 untypedLC <> Lam constr
+R15641:15644 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R15631:15637 untypedLC <> redexes:99 def
+R15645:15651 untypedLC <> redexes:99 def
+R15661:15663 untypedLC <> App constr
+R15693:15696 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R15683:15689 untypedLC <> redexes:99 def
+R15697:15703 untypedLC <> redexes:99 def
+R15712:15714 untypedLC <> Lam constr
+R15734:15740 untypedLC <> redexes:99 def
+ind 15781:15783 <> occ
+constr 15796:15798 <> Ici
+constr 15802:15803 <> UL
+constr 15835:15836 <> LA
+constr 15871:15872 <> RA
+R15810:15813 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15807:15809 untypedLC <> occ:101 ind
+R15814:15816 untypedLC <> occ:101 ind
+R15843:15846 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15840:15842 untypedLC <> occ:101 ind
+R15847:15849 untypedLC <> occ:101 ind
+R15879:15882 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15876:15878 untypedLC <> occ:101 ind
+R15883:15885 untypedLC <> occ:101 ind
+def 15924:15928 <> no_UL
+binder 15930:15931 <> oc:103
+R15935:15938 Coq.Init.Datatypes <> bool ind
+R15951:15952 untypedLC <> oc:103 var
+R15963:15965 untypedLC <> Ici constr
+R15970:15973 Coq.Init.Datatypes <> true constr
+R15979:15980 untypedLC <> UL constr
+R15987:15991 Coq.Init.Datatypes <> false constr
+R15997:15998 untypedLC <> LA constr
+R16006:16010 untypedLC <> no_UL:104 def
+R16012:16013 untypedLC <> oc:103 var
+R16019:16020 untypedLC <> RA constr
+R16028:16032 untypedLC <> no_UL:104 def
+R16034:16035 untypedLC <> oc:103 var
+def 16096:16103 <> smtg_occ
+binder 16105:16107 <> chk:106
+binder 16109:16110 <> oc:107
+binder 16112:16113 <> ex:108
+binder 16136:16137 <> oc:109
+binder 16139:16140 <> ex:110
+R16167:16168 untypedLC <> ex:110 var
+R16163:16164 untypedLC <> oc:109 var
+R16182:16184 untypedLC <> Ici constr
+R16192:16194 untypedLC <> chk:106 var
+R16196:16197 untypedLC <> ex:110 var
+R16206:16207 untypedLC <> UL constr
+R16213:16215 untypedLC <> Lam constr
+R16225:16227 untypedLC <> aux:111 var
+R16229:16230 untypedLC <> oc:109 var
+R16242:16243 untypedLC <> LA constr
+R16249:16251 untypedLC <> App constr
+R16262:16264 untypedLC <> aux:111 var
+R16266:16267 untypedLC <> oc:109 var
+R16279:16280 untypedLC <> RA constr
+R16286:16288 untypedLC <> App constr
+R16299:16301 untypedLC <> aux:111 var
+R16303:16304 untypedLC <> oc:109 var
+R16324:16328 Coq.Init.Logic <> False ind
+R16340:16341 untypedLC <> oc:107 var
+R16343:16344 untypedLC <> ex:108 var
+def 16359:16365 <> anyterm
+R16373:16376 untypedLC <> lexp ind
+binder 16368:16369 <> ex:114
+R16382:16385 Coq.Init.Logic <> True ind
+def 16419:16421 <> rar
+R16429:16432 untypedLC <> lexp ind
+binder 16424:16425 <> ex:115
+R16446:16447 untypedLC <> ex:115 var
+R16458:16460 untypedLC <> App constr
+R16463:16465 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R16467:16470 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R16479:16482 Coq.Init.Logic <> True ind
+R16493:16497 Coq.Init.Logic <> False ind
+def 16540:16542 <> fvr
+R16549:16552 untypedLC <> Name ind
+binder 16545:16546 <> nx:117
+R16561:16564 untypedLC <> lexp ind
+binder 16556:16557 <> ex:118
+R16578:16579 untypedLC <> ex:118 var
+R16590:16592 untypedLC <> Var constr
+R16603:16610 untypedLC <> eqb_Name def
+R16612:16613 untypedLC <> nx:117 var
+R16633:16637 Coq.Init.Logic <> False ind
+R16623:16626 Coq.Init.Logic <> True ind
+R16648:16652 Coq.Init.Logic <> False ind
+def 16673:16679 <> has_occ
+R16684:16691 untypedLC <> smtg_occ def
+R16693:16699 untypedLC <> anyterm def
+def 16713:16719 <> has_red
+R16724:16731 untypedLC <> smtg_occ def
+R16733:16735 untypedLC <> rar def
+prf 16745:16757 <> has_occ_UL_LA
+binder 16760:16761 <> ex:120
+binder 16763:16765 <> oc1:121
+binder 16767:16769 <> oc2:122
+R16793:16796 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16774:16780 untypedLC <> has_occ def
+R16783:16784 untypedLC <> UL constr
+R16786:16788 untypedLC <> oc1:121 var
+R16791:16792 untypedLC <> ex:120 var
+R16816:16819 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16797:16803 untypedLC <> has_occ def
+R16806:16807 untypedLC <> LA constr
+R16809:16811 untypedLC <> oc2:122 var
+R16814:16815 untypedLC <> ex:120 var
+R16820:16824 Coq.Init.Logic <> False ind
+prf 16879:16891 <> has_occ_UL_RA
+binder 16894:16895 <> ex:123
+binder 16897:16899 <> oc1:124
+binder 16901:16903 <> oc2:125
+R16927:16930 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16908:16914 untypedLC <> has_occ def
+R16917:16918 untypedLC <> UL constr
+R16920:16922 untypedLC <> oc1:124 var
+R16925:16926 untypedLC <> ex:123 var
+R16950:16953 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16931:16937 untypedLC <> has_occ def
+R16940:16941 untypedLC <> RA constr
+R16943:16945 untypedLC <> oc2:125 var
+R16948:16949 untypedLC <> ex:123 var
+R16954:16958 Coq.Init.Logic <> False ind
+def 17016:17025 <> subterm_at
+binder 17027:17028 <> ex:126
+binder 17030:17031 <> oc:127
+R17048:17051 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17035:17041 untypedLC <> has_occ def
+R17043:17044 untypedLC <> oc:127 var
+R17046:17047 untypedLC <> ex:126 var
+R17052:17055 untypedLC <> lexp ind
+R17075:17076 untypedLC <> ex:126 var
+R17071:17072 untypedLC <> oc:127 var
+R17098:17101 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17085:17091 untypedLC <> has_occ def
+R17093:17094 untypedLC <> oc:130 var
+R17096:17097 untypedLC <> ex:129 var
+R17102:17105 untypedLC <> lexp ind
+R17119:17121 untypedLC <> Ici constr
+binder 17133:17135 <> oec:131
+R17140:17141 untypedLC <> ex:126 var
+R17150:17151 untypedLC <> UL constr
+R17157:17159 untypedLC <> Lam constr
+binder 17173:17175 <> oec:132
+R17180:17189 untypedLC <> subterm_at:128 def
+R17197:17199 untypedLC <> oec:132 var
+R17194:17195 untypedLC <> oc:127 var
+R17208:17209 untypedLC <> LA constr
+R17215:17217 untypedLC <> App constr
+binder 17232:17234 <> oec:133
+R17239:17248 untypedLC <> subterm_at:128 def
+R17256:17258 untypedLC <> oec:133 var
+R17253:17254 untypedLC <> oc:127 var
+R17267:17268 untypedLC <> RA constr
+R17274:17276 untypedLC <> App constr
+binder 17291:17293 <> oec:134
+R17298:17307 untypedLC <> subterm_at:128 def
+R17315:17317 untypedLC <> oec:134 var
+R17312:17313 untypedLC <> oc:127 var
+binder 17338:17340 <> oec:135
+R17351:17353 untypedLC <> oec:135 var
+def 17386:17395 <> rewrite_at
+R17408:17411 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17404:17407 untypedLC <> lexp ind
+binder 17398:17400 <> chk:137
+binder 17432:17433 <> ex:138
+R17442:17445 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17436:17438 untypedLC <> chk:137 var
+R17440:17441 untypedLC <> ex:138 var
+R17446:17449 untypedLC <> lexp ind
+binder 17419:17422 <> rewf:139
+binder 17474:17475 <> ex:140
+binder 17477:17478 <> oc:141
+R17487:17494 untypedLC <> smtg_occ def
+R17496:17498 untypedLC <> chk:137 var
+R17500:17501 untypedLC <> oc:141 var
+R17503:17504 untypedLC <> ex:140 var
+binder 17481:17483 <> oec:142
+R17509:17512 untypedLC <> lexp ind
+binder 17530:17531 <> ex:143
+binder 17533:17534 <> oc:144
+R17556:17559 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17538:17545 untypedLC <> smtg_occ def
+R17547:17549 untypedLC <> chk:137 var
+R17551:17552 untypedLC <> oc:144 var
+R17554:17555 untypedLC <> ex:143 var
+R17560:17563 untypedLC <> lexp ind
+R17583:17584 untypedLC <> ex:143 var
+R17579:17580 untypedLC <> oc:144 var
+R17611:17614 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17593:17600 untypedLC <> smtg_occ def
+R17602:17604 untypedLC <> chk:137 var
+R17606:17607 untypedLC <> oc:147 var
+R17609:17610 untypedLC <> ex:146 var
+R17615:17618 untypedLC <> lexp ind
+R17632:17634 untypedLC <> Ici constr
+binder 17646:17648 <> oec:148
+R17653:17656 untypedLC <> rewf:139 var
+R17661:17663 untypedLC <> oec:148 var
+R17658:17659 untypedLC <> ex:143 var
+R17672:17673 untypedLC <> UL constr
+R17679:17681 untypedLC <> Lam constr
+binder 17696:17698 <> oec:149
+R17703:17705 untypedLC <> Lam constr
+R17711:17716 untypedLC <> rew_at:145 var
+R17724:17726 untypedLC <> oec:149 var
+R17721:17722 untypedLC <> oc:144 var
+R17736:17737 untypedLC <> LA constr
+R17743:17745 untypedLC <> App constr
+binder 17760:17762 <> oec:150
+R17767:17769 untypedLC <> App constr
+R17772:17777 untypedLC <> rew_at:145 var
+R17785:17787 untypedLC <> oec:150 var
+R17782:17783 untypedLC <> oc:144 var
+R17800:17801 untypedLC <> RA constr
+R17807:17809 untypedLC <> App constr
+binder 17824:17826 <> oec:151
+R17831:17833 untypedLC <> App constr
+R17839:17844 untypedLC <> rew_at:145 var
+R17852:17854 untypedLC <> oec:151 var
+R17849:17850 untypedLC <> oc:144 var
+binder 17876:17878 <> oec:152
+R17889:17891 untypedLC <> oec:152 var
+R17912:17913 untypedLC <> ex:140 var
+R17915:17916 untypedLC <> oc:141 var
+R17918:17920 untypedLC <> oec:142 var
+ind 18438:18444 <> gocc_of
+constr 18481:18483 <> o_o
+R18457:18460 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18453:18456 untypedLC <> lexp ind
+binder 18447:18449 <> chk:154
+binder 18467:18468 <> ex:155
+binder 18494:18495 <> oc:158
+R18516:18519 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18498:18505 untypedLC <> smtg_occ def
+R18507:18509 untypedLC <> chk:154 var
+R18511:18512 untypedLC <> oc:158 var
+R18514:18515 untypedLC <> ex:155 var
+R18520:18526 untypedLC <> gocc_of:156 ind
+R18532:18533 untypedLC <> ex:155 var
+R18528:18530 untypedLC <> chk:154 var
+def 18547:18552 <> occ_of
+R18557:18563 untypedLC <> gocc_of ind
+R18565:18571 untypedLC <> anyterm def
+def 18585:18591 <> rocc_of
+R18596:18602 untypedLC <> gocc_of ind
+R18604:18606 untypedLC <> rar def
+def 18620:18628 <> lift_test
+R18637:18640 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18634:18636 untypedLC <> occ ind
+R18641:18644 Coq.Init.Datatypes <> bool ind
+binder 18631:18631 <> f:159
+binder 18647:18649 <> chk:160
+binder 18651:18652 <> ex:161
+R18660:18666 untypedLC <> gocc_of ind
+R18668:18670 untypedLC <> chk:160 var
+R18672:18673 untypedLC <> ex:161 var
+binder 18655:18656 <> go:162
+R18678:18681 Coq.Init.Datatypes <> bool ind
+R18703:18704 untypedLC <> go:162 var
+binder 18693:18694 <> oc:163
+R18709:18709 untypedLC <> f:159 var
+R18711:18712 untypedLC <> oc:163 var
+prf 18728:18740 <> smtg_occ_impl
+R18759:18762 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18755:18758 untypedLC <> lexp ind
+binder 18743:18746 <> chk1:164
+binder 18748:18751 <> chk2:165
+R18773:18773 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18803:18807 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 18781:18782 <> ex:166
+R18792:18795 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18785:18788 untypedLC <> chk1:164 var
+R18790:18791 untypedLC <> ex:166 var
+R18796:18799 untypedLC <> chk2:165 var
+R18801:18802 untypedLC <> ex:166 var
+binder 18815:18816 <> oc:167
+binder 18818:18819 <> ex:168
+R18841:18844 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18822:18829 untypedLC <> smtg_occ def
+R18831:18834 untypedLC <> chk1:164 var
+R18836:18837 untypedLC <> oc:167 var
+R18839:18840 untypedLC <> ex:168 var
+R18845:18852 untypedLC <> smtg_occ def
+R18854:18857 untypedLC <> chk2:165 var
+R18859:18860 untypedLC <> oc:167 var
+R18862:18863 untypedLC <> ex:168 var
+binder 18908:18909 <> oc:169
+binder 18911:18912 <> ex:170
+R18936:18937 untypedLC <> ex:170 var
+R18932:18933 untypedLC <> oc:169 var
+R18951:18953 untypedLC <> Ici constr
+R18966:18967 untypedLC <> ex:170 var
+R18976:18977 untypedLC <> UL constr
+R18983:18985 untypedLC <> Lam constr
+R18995:18997 untypedLC <> aux:171 var
+R18999:19000 untypedLC <> oc:169 var
+R19012:19013 untypedLC <> LA constr
+R19019:19021 untypedLC <> App constr
+R19032:19034 untypedLC <> aux:171 var
+R19036:19037 untypedLC <> oc:169 var
+R19049:19050 untypedLC <> RA constr
+R19056:19058 untypedLC <> App constr
+R19069:19071 untypedLC <> aux:171 var
+R19073:19074 untypedLC <> oc:169 var
+binder 19098:19098 <> F:174
+R19103:19103 untypedLC <> F:174 var
+binder 18908:18909 <> oc:175
+binder 18911:18912 <> ex:176
+R18936:18937 untypedLC <> ex:176 var
+R18932:18933 untypedLC <> oc:175 var
+R18951:18953 untypedLC <> Ici constr
+R18966:18967 untypedLC <> ex:176 var
+R18976:18977 untypedLC <> UL constr
+R18983:18985 untypedLC <> Lam constr
+R18995:18997 untypedLC <> aux:177 var
+R18999:19000 untypedLC <> oc:175 var
+R19012:19013 untypedLC <> LA constr
+R19019:19021 untypedLC <> App constr
+R19032:19034 untypedLC <> aux:177 var
+R19036:19037 untypedLC <> oc:175 var
+R19049:19050 untypedLC <> RA constr
+R19056:19058 untypedLC <> App constr
+R19069:19071 untypedLC <> aux:177 var
+R19073:19074 untypedLC <> oc:175 var
+binder 19098:19098 <> F:180
+R19103:19103 untypedLC <> F:180 var
+prf 19143:19151 <> gocc_impl
+R19170:19173 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19166:19169 untypedLC <> lexp ind
+binder 19154:19157 <> chk1:181
+binder 19159:19162 <> chk2:182
+R19184:19184 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19214:19218 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 19192:19193 <> ex:183
+R19203:19206 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19196:19199 untypedLC <> chk1:181 var
+R19201:19202 untypedLC <> ex:183 var
+R19207:19210 untypedLC <> chk2:182 var
+R19212:19213 untypedLC <> ex:183 var
+binder 19226:19227 <> ex:184
+R19245:19248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19230:19236 untypedLC <> gocc_of ind
+R19238:19241 untypedLC <> chk1:181 var
+R19243:19244 untypedLC <> ex:184 var
+R19249:19255 untypedLC <> gocc_of ind
+R19257:19260 untypedLC <> chk2:182 var
+R19262:19263 untypedLC <> ex:184 var
+R19318:19330 untypedLC <> smtg_occ_impl thm
+R19318:19330 untypedLC <> smtg_occ_impl thm
+prf 19367:19374 <> rocc_occ
+binder 19377:19378 <> ex:185
+R19393:19396 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19383:19389 untypedLC <> rocc_of def
+R19391:19392 untypedLC <> ex:185 var
+R19397:19402 untypedLC <> occ_of def
+R19404:19405 untypedLC <> ex:185 var
+R19424:19432 untypedLC <> gocc_impl thm
+R19434:19436 untypedLC <> rar def
+R19438:19444 untypedLC <> anyterm def
+R19424:19432 untypedLC <> gocc_impl thm
+R19434:19436 untypedLC <> rar def
+R19438:19444 untypedLC <> anyterm def
+R19479:19479 Coq.Init.Logic <> I constr
+R19479:19479 Coq.Init.Logic <> I constr
+def 19537:19548 <> subterm_at_g
+binder 19550:19551 <> ex:186
+R19559:19564 untypedLC <> occ_of def
+R19566:19567 untypedLC <> ex:186 var
+binder 19554:19555 <> oe:187
+R19572:19575 untypedLC <> lexp ind
+R19599:19600 untypedLC <> oe:187 var
+binder 19587:19588 <> oc:188
+binder 19591:19593 <> oec:189
+R19605:19614 untypedLC <> subterm_at def
+R19616:19617 untypedLC <> ex:186 var
+R19619:19620 untypedLC <> oc:188 var
+R19622:19624 untypedLC <> oec:189 var
+def 19638:19650 <> subterm_at_gr
+binder 19652:19653 <> ex:190
+R19661:19667 untypedLC <> rocc_of def
+R19669:19670 untypedLC <> ex:190 var
+binder 19656:19657 <> oe:191
+R19675:19678 untypedLC <> lexp ind
+R19685:19696 untypedLC <> subterm_at_g def
+R19698:19699 untypedLC <> ex:190 var
+R19702:19709 untypedLC <> rocc_occ thm
+R19711:19712 untypedLC <> oe:191 var
+def 19728:19739 <> rewrite_at_g
+binder 19741:19743 <> chk:192
+binder 19745:19748 <> rewf:193
+binder 19750:19751 <> ex:194
+R19759:19765 untypedLC <> gocc_of ind
+R19767:19769 untypedLC <> chk:192 var
+R19771:19772 untypedLC <> ex:194 var
+binder 19754:19755 <> oe:195
+R19777:19780 untypedLC <> lexp ind
+R19804:19805 untypedLC <> oe:195 var
+binder 19792:19793 <> oc:196
+binder 19796:19798 <> oec:197
+R19810:19819 untypedLC <> rewrite_at def
+R19821:19823 untypedLC <> chk:192 var
+R19825:19828 untypedLC <> rewf:193 var
+R19830:19831 untypedLC <> ex:194 var
+R19833:19834 untypedLC <> oc:196 var
+R19836:19838 untypedLC <> oec:197 var
+def 19853:19862 <> root_subst
+binder 19864:19865 <> ex:198
+R19875:19878 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19869:19871 untypedLC <> rar def
+R19873:19874 untypedLC <> ex:198 var
+R19879:19882 untypedLC <> lexp ind
+R19895:19896 untypedLC <> ex:198 var
+R19907:19909 untypedLC <> App constr
+R19912:19914 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R19917:19920 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R19947:19951 untypedLC <> subst def
+binder 19982:19982 <> F:200
+R19993:19993 untypedLC <> F:200 var
+def 20092:20098 <> beta_at
+binder 20109:20110 <> ex:202
+R20123:20126 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20113:20119 untypedLC <> rocc_of def
+R20121:20122 untypedLC <> ex:202 var
+R20127:20130 untypedLC <> lexp ind
+R20135:20146 untypedLC <> rewrite_at_g def
+R20148:20150 untypedLC <> rar def
+R20152:20161 untypedLC <> root_subst def
+def 20185:20189 <> lift1
+R20198:20201 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20195:20197 untypedLC <> occ ind
+R20202:20204 untypedLC <> occ ind
+binder 20192:20192 <> f:203
+R20215:20218 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20211:20214 untypedLC <> lexp ind
+R20219:20222 untypedLC <> lexp ind
+binder 20208:20208 <> g:204
+R20229:20229 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20282:20289 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20329:20329 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 20237:20238 <> oc:205
+binder 20240:20241 <> ex:206
+R20257:20260 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20244:20250 untypedLC <> has_red def
+R20252:20253 untypedLC <> oc:205 var
+R20255:20256 untypedLC <> ex:206 var
+R20261:20267 untypedLC <> has_red def
+R20270:20270 untypedLC <> f:203 var
+R20272:20273 untypedLC <> oc:205 var
+R20277:20277 untypedLC <> g:204 var
+R20279:20280 untypedLC <> ex:206 var
+binder 20297:20298 <> ex:207
+R20311:20314 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20301:20307 untypedLC <> rocc_of def
+R20309:20310 untypedLC <> ex:207 var
+R20315:20321 untypedLC <> rocc_of def
+R20324:20324 untypedLC <> g:204 var
+R20326:20327 untypedLC <> ex:207 var
+def 20425:20432 <> same_eoc
+binder 20434:20435 <> oc:208
+binder 20437:20438 <> ex:209
+R20447:20453 untypedLC <> has_red def
+R20455:20456 untypedLC <> oc:208 var
+R20458:20459 untypedLC <> ex:209 var
+binder 20441:20443 <> eoc:210
+R20465:20467 untypedLC <> eoc:210 var
+def 20482:20489 <> lift1_UL
+binder 20491:20492 <> nx:211
+binder 20550:20551 <> ex:212
+R20564:20567 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20554:20560 untypedLC <> rocc_of def
+R20562:20563 untypedLC <> ex:212 var
+R20568:20574 untypedLC <> rocc_of def
+R20577:20579 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R20582:20584 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R20580:20581 untypedLC <> nx:211 var
+R20585:20586 untypedLC <> ex:212 var
+R20497:20501 untypedLC <> lift1 def
+R20503:20504 untypedLC <> UL constr
+binder 20511:20512 <> ex:213
+R20517:20519 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R20522:20524 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R20520:20521 untypedLC <> nx:211 var
+R20525:20526 untypedLC <> ex:213 var
+R20529:20536 untypedLC <> same_eoc def
+def 20601:20608 <> lift1_LA
+binder 20610:20611 <> rx:214
+binder 20668:20669 <> lx:215
+R20682:20685 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20672:20678 untypedLC <> rocc_of def
+R20680:20681 untypedLC <> lx:215 var
+R20686:20692 untypedLC <> rocc_of def
+R20695:20697 untypedLC <> App constr
+R20699:20700 untypedLC <> lx:215 var
+R20702:20703 untypedLC <> rx:214 var
+R20616:20620 untypedLC <> lift1 def
+R20622:20623 untypedLC <> LA constr
+binder 20630:20631 <> lx:216
+R20636:20638 untypedLC <> App constr
+R20640:20641 untypedLC <> lx:216 var
+R20643:20644 untypedLC <> rx:214 var
+R20647:20654 untypedLC <> same_eoc def
+def 20718:20725 <> lift1_RA
+binder 20727:20728 <> lx:217
+binder 20785:20786 <> rx:218
+R20799:20802 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20789:20795 untypedLC <> rocc_of def
+R20797:20798 untypedLC <> rx:218 var
+R20803:20809 untypedLC <> rocc_of def
+R20812:20814 untypedLC <> App constr
+R20816:20817 untypedLC <> lx:217 var
+R20819:20820 untypedLC <> rx:218 var
+R20733:20737 untypedLC <> lift1 def
+R20739:20740 untypedLC <> RA constr
+binder 20747:20748 <> rx:219
+R20753:20755 untypedLC <> App constr
+R20757:20758 untypedLC <> lx:217 var
+R20760:20761 untypedLC <> rx:219 var
+R20764:20771 untypedLC <> same_eoc def
+def 20834:20846 <> occredexes_of
+binder 20848:20849 <> ex:220
+R20853:20856 Coq.Init.Datatypes <> list ind
+R20859:20865 untypedLC <> rocc_of def
+R20867:20868 untypedLC <> ex:220 var
+R20882:20883 untypedLC <> ex:220 var
+R20894:20896 untypedLC <> Var constr
+R20916:20917 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R20923:20925 untypedLC <> Lam constr
+R20945:20947 Coq.Lists.List <> map def
+R20967:20979 untypedLC <> occredexes_of:221 def
+R20950:20957 untypedLC <> lift1_UL def
+R20989:20991 untypedLC <> App constr
+R21017:21019 Coq.Lists.List <> map def
+R21039:21051 untypedLC <> occredexes_of:221 def
+R21022:21029 untypedLC <> lift1_LA def
+binder 21010:21012 <> orl:223
+R21075:21077 Coq.Lists.List <> map def
+R21097:21109 untypedLC <> occredexes_of:221 def
+R21080:21087 untypedLC <> lift1_RA def
+binder 21068:21070 <> orr:224
+R21164:21167 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21138:21141 Coq.Init.Datatypes <> list ind
+R21144:21150 untypedLC <> rocc_of def
+R21153:21155 untypedLC <> App constr
+R21157:21158 untypedLC <> lx:225 var
+R21182:21182 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R21185:21187 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R21195:21198 Coq.Init.Datatypes <> cons constr
+R21201:21203 untypedLC <> o_o constr
+R21205:21207 untypedLC <> rar def
+R21210:21211 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R21214:21216 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R21219:21222 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R21225:21227 untypedLC <> Ici constr
+R21229:21229 Coq.Init.Logic <> I constr
+binder 21247:21250 <> olrx:226
+R21255:21258 untypedLC <> olrx:226 var
+R21272:21275 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R21269:21271 untypedLC <> orl:223 var
+R21276:21278 untypedLC <> orr:224 var
+def 21362:21365 <> map2
+binder 21368:21368 <> A:227
+binder 21370:21370 <> B:228
+binder 21372:21372 <> C:229
+R21380:21383 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21379:21379 untypedLC <> B:228 var
+R21384:21384 untypedLC <> C:229 var
+binder 21376:21376 <> f:230
+R21399:21402 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21389:21392 Coq.Init.Datatypes <> list ind
+R21396:21396 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R21395:21395 untypedLC <> A:227 var
+R21397:21397 untypedLC <> B:228 var
+R21403:21406 Coq.Init.Datatypes <> list ind
+R21410:21410 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R21409:21409 untypedLC <> A:227 var
+R21411:21411 untypedLC <> C:229 var
+R21420:21422 Coq.Lists.List <> map def
+R21433:21433 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R21432:21432 untypedLC <> A:227 var
+R21434:21434 untypedLC <> B:228 var
+binder 21429:21430 <> xy:231
+R21452:21453 untypedLC <> xy:231 var
+binder 21444:21444 <> x:232
+binder 21446:21446 <> y:233
+R21458:21458 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21460:21461 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21465:21465 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21459:21459 untypedLC <> x:232 var
+R21462:21462 untypedLC <> f:230 var
+R21464:21464 untypedLC <> y:233 var
+def 21506:21515 <> nbd_occ_of
+binder 21517:21518 <> ex:234
+binder 21520:21520 <> n:235
+R21527:21529 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R21524:21526 Coq.Init.Datatypes <> nat ind
+R21530:21533 Coq.Init.Datatypes <> list ind
+R21539:21541 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R21536:21538 Coq.Init.Datatypes <> nat ind
+R21542:21548 untypedLC <> rocc_of def
+R21550:21551 untypedLC <> ex:234 var
+R21565:21566 untypedLC <> ex:234 var
+R21577:21579 untypedLC <> Var constr
+R21599:21599 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21601:21602 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21605:21605 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21600:21600 untypedLC <> n:235 var
+R21603:21604 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R21611:21613 untypedLC <> Lam constr
+R21652:21661 untypedLC <> nbd_occ_of:236 def
+R21667:21667 Coq.Init.Datatypes <> S constr
+R21669:21669 untypedLC <> n:235 var
+binder 21642:21643 <> n':238
+binder 21646:21646 <> l:239
+R21680:21680 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21683:21684 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21708:21708 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21681:21682 untypedLC <> n':238 var
+R21685:21688 untypedLC <> map2 def
+R21707:21707 untypedLC <> l:239 var
+R21691:21698 untypedLC <> lift1_UL def
+R21714:21716 untypedLC <> App constr
+R21747:21756 untypedLC <> nbd_occ_of:236 def
+R21761:21761 untypedLC <> n:235 var
+binder 21736:21737 <> n1:240
+binder 21740:21741 <> l1:241
+R21786:21795 untypedLC <> nbd_occ_of:236 def
+R21800:21801 untypedLC <> n1:240 var
+binder 21775:21776 <> n2:242
+binder 21779:21780 <> l2:243
+R21821:21824 untypedLC <> map2 def
+R21843:21844 untypedLC <> l1:241 var
+R21827:21834 untypedLC <> lift1_LA def
+binder 21814:21816 <> orl:244
+R21864:21867 untypedLC <> map2 def
+R21886:21887 untypedLC <> l2:243 var
+R21870:21877 untypedLC <> lift1_RA def
+binder 21857:21859 <> orr:245
+R21896:21896 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21899:21900 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22085:22085 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21897:21898 untypedLC <> n2:242 var
+R21949:21952 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21917:21920 Coq.Init.Datatypes <> list ind
+R21926:21928 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R21923:21925 Coq.Init.Datatypes <> nat ind
+R21929:21935 untypedLC <> rocc_of def
+R21938:21940 untypedLC <> App constr
+R21942:21943 untypedLC <> lx:246 var
+R21971:21973 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R21976:21978 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R21985:21988 Coq.Init.Datatypes <> cons constr
+R21990:21990 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21992:21993 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22025:22025 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21991:21991 untypedLC <> n:235 var
+R21994:21996 untypedLC <> o_o constr
+R21998:22000 untypedLC <> rar def
+R22003:22006 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R22009:22011 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R22014:22017 untypedLC <> :::'λ'_x_'..'_x_'·'_x not
+R22020:22022 untypedLC <> Ici constr
+R22024:22024 Coq.Init.Logic <> I constr
+binder 22047:22050 <> olrx:247
+R22055:22058 untypedLC <> olrx:247 var
+R22077:22080 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R22074:22076 untypedLC <> orl:244 var
+R22081:22083 untypedLC <> orr:245 var
+def 22106:22122 <> nbd_occredexes_of
+binder 22124:22125 <> ex:248
+R22129:22132 Coq.Init.Datatypes <> list ind
+R22138:22140 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R22135:22137 Coq.Init.Datatypes <> nat ind
+R22141:22147 untypedLC <> rocc_of def
+R22149:22150 untypedLC <> ex:248 var
+R22173:22182 untypedLC <> nbd_occ_of def
+R22184:22185 untypedLC <> ex:248 var
+binder 22166:22166 <> l:249
+R22192:22192 untypedLC <> l:249 var
+def 22207:22217 <> lift_fct_nb
+binder 22220:22220 <> A:250
+R22231:22234 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22228:22230 untypedLC <> occ ind
+R22235:22235 untypedLC <> A:250 var
+binder 22224:22224 <> f:251
+binder 22238:22239 <> ex:252
+R22251:22253 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R22248:22250 Coq.Init.Datatypes <> nat ind
+R22254:22260 untypedLC <> rocc_of def
+R22262:22263 untypedLC <> ex:252 var
+binder 22242:22244 <> nro:253
+R22268:22268 untypedLC <> A:250 var
+R22291:22293 untypedLC <> nro:253 var
+binder 22284:22285 <> ro:254
+R22313:22314 untypedLC <> ro:254 var
+binder 22303:22304 <> oc:255
+R22321:22321 untypedLC <> f:251 var
+R22323:22324 untypedLC <> oc:255 var
+def 22389:22399 <> lift_cmp_nb
+binder 22402:22402 <> A:256
+R22415:22418 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22412:22414 untypedLC <> occ ind
+R22422:22425 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22419:22421 untypedLC <> occ ind
+R22426:22426 untypedLC <> A:256 var
+binder 22406:22408 <> cmp:257
+binder 22429:22430 <> ex:258
+R22448:22450 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R22445:22447 Coq.Init.Datatypes <> nat ind
+R22451:22457 untypedLC <> rocc_of def
+R22459:22460 untypedLC <> ex:258 var
+binder 22433:22436 <> nro1:259
+binder 22438:22441 <> nro2:260
+R22465:22465 untypedLC <> A:256 var
+R22489:22492 untypedLC <> nro1:259 var
+binder 22481:22483 <> ro1:261
+R22513:22515 untypedLC <> ro1:261 var
+binder 22502:22504 <> oc1:262
+R22539:22542 untypedLC <> nro2:260 var
+binder 22531:22533 <> ro2:263
+R22563:22565 untypedLC <> ro2:263 var
+binder 22552:22554 <> oc2:264
+R22572:22574 untypedLC <> cmp:257 var
+R22580:22582 untypedLC <> oc2:264 var
+R22576:22578 untypedLC <> oc1:262 var
+def 22647:22657 <> pos_redexes
+binder 22659:22660 <> ex:265
+R22664:22667 Coq.Init.Datatypes <> list ind
+R22669:22671 Coq.Init.Datatypes <> nat ind
+R22676:22678 Coq.Lists.List <> map def
+R22685:22701 untypedLC <> nbd_occredexes_of def
+R22703:22704 untypedLC <> ex:265 var
+R22680:22682 Coq.Init.Datatypes <> fst def
+def 22719:22734 <> pos_redexes_noUL
+binder 22736:22737 <> ex:266
+R22741:22744 Coq.Init.Datatypes <> list ind
+R22746:22748 Coq.Init.Datatypes <> nat ind
+R22768:22784 untypedLC <> nbd_occredexes_of def
+R22786:22787 untypedLC <> ex:266 var
+binder 22759:22763 <> nroex:267
+R22812:22817 Coq.Lists.List <> filter def
+R22842:22846 untypedLC <> nroex:267 var
+R22820:22830 untypedLC <> lift_fct_nb def
+R22838:22839 untypedLC <> ex:266 var
+R22832:22836 untypedLC <> no_UL def
+binder 22798:22807 <> nroex_noUL:268
+R22853:22855 Coq.Lists.List <> map def
+R22861:22870 untypedLC <> nroex_noUL:268 var
+R22857:22859 Coq.Init.Datatypes <> fst def
+def 22885:22890 <> wrg_nb
+R22894:22897 untypedLC <> lexp ind
+R22903:22903 untypedLC <> w constr
+R22905:22905 untypedLC <> r constr
+R22907:22907 untypedLC <> o constr
+R22909:22909 untypedLC <> n constr
+R22911:22911 untypedLC <> g constr
+R22915:22915 untypedLC <> n constr
+R22917:22917 untypedLC <> u constr
+R22919:22919 untypedLC <> m constr
+R22921:22921 untypedLC <> b constr
+R22923:22923 untypedLC <> e constr
+R22925:22925 untypedLC <> r constr
+def 22941:22949 <> see_redex
+binder 22951:22953 <> nn1:269
+binder 22955:22956 <> ex:270
+R22960:22963 untypedLC <> lexp ind
+binder 22980:22982 <> lno:271
+R22996:22998 untypedLC <> lno:271 var
+R23009:23010 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R23015:23020 untypedLC <> wrg_nb def
+R23035:23038 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R23026:23026 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23030:23031 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23034:23034 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23049:23051 Coq.Init.Nat <> eqb def
+R23053:23055 untypedLC <> nn1:269 var
+R23091:23094 untypedLC <> loop:272 var
+R23096:23098 untypedLC <> lno:271 var
+R23066:23078 untypedLC <> subterm_at_gr def
+R23080:23081 untypedLC <> ex:270 var
+R23108:23124 untypedLC <> nbd_occredexes_of def
+R23126:23127 untypedLC <> ex:270 var
+def 23143:23150 <> red_beta
+binder 23152:23154 <> nn1:274
+binder 23156:23157 <> ex:275
+R23161:23164 untypedLC <> lexp ind
+binder 23181:23183 <> lno:276
+R23197:23199 untypedLC <> lno:276 var
+R23210:23211 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R23216:23221 untypedLC <> wrg_nb def
+R23236:23239 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R23227:23227 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23231:23232 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23235:23235 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23250:23252 Coq.Init.Nat <> eqb def
+R23254:23256 untypedLC <> nn1:274 var
+R23286:23289 untypedLC <> loop:277 var
+R23291:23293 untypedLC <> lno:276 var
+R23267:23273 untypedLC <> beta_at def
+R23275:23276 untypedLC <> ex:275 var
+R23303:23319 untypedLC <> nbd_occredexes_of def
+R23321:23322 untypedLC <> ex:275 var
+def 23420:23424 <> morph
+R23433:23436 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23430:23432 untypedLC <> occ ind
+R23437:23439 untypedLC <> occ ind
+binder 23427:23427 <> f:279
+R23449:23452 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23446:23448 untypedLC <> occ ind
+R23456:23459 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23453:23455 untypedLC <> occ ind
+binder 23443:23443 <> R:280
+binder 23485:23487 <> oc1:281
+binder 23489:23491 <> oc2:282
+R23503:23506 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23494:23494 untypedLC <> R:280 var
+R23500:23502 untypedLC <> oc2:282 var
+R23496:23498 untypedLC <> oc1:281 var
+R23507:23507 untypedLC <> R:280 var
+R23518:23518 untypedLC <> f:279 var
+R23520:23522 untypedLC <> oc2:282 var
+R23510:23510 untypedLC <> f:279 var
+R23512:23514 untypedLC <> oc1:281 var
+ind 23537:23546 <> more_outer
+constr 23574:23579 <> mo_Ici
+constr 23614:23619 <> mo_mUL
+constr 23645:23650 <> mo_mLA
+constr 23676:23681 <> mo_mRA
+R23553:23556 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23550:23552 untypedLC <> occ ind
+R23560:23563 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23557:23559 untypedLC <> occ ind
+binder 23590:23591 <> oc:285
+R23594:23603 untypedLC <> more_outer:283 ind
+R23609:23610 untypedLC <> oc:285 var
+R23605:23607 untypedLC <> Ici constr
+R23623:23627 untypedLC <> morph def
+R23629:23630 untypedLC <> UL constr
+R23632:23641 untypedLC <> more_outer:283 ind
+R23654:23658 untypedLC <> morph def
+R23660:23661 untypedLC <> LA constr
+R23663:23672 untypedLC <> more_outer:283 ind
+R23685:23689 untypedLC <> morph def
+R23691:23692 untypedLC <> RA constr
+R23694:23703 untypedLC <> more_outer:283 ind
+def 23719:23728 <> more_inner
+binder 23730:23732 <> oc1:286
+binder 23734:23736 <> oc2:287
+R23741:23750 untypedLC <> more_outer ind
+R23752:23754 untypedLC <> oc2:287 var
+R23756:23758 untypedLC <> oc1:286 var
+prf 23768:23782 <> more_outer_refl
+binder 23793:23794 <> oc:288
+R23797:23806 untypedLC <> more_outer ind
+R23808:23809 untypedLC <> oc:288 var
+R23811:23812 untypedLC <> oc:288 var
+R23881:23886 untypedLC <> mo_Ici constr
+R23881:23886 untypedLC <> mo_Ici constr
+R23899:23904 untypedLC <> mo_mUL constr
+R23899:23904 untypedLC <> mo_mUL constr
+R23928:23933 untypedLC <> mo_mLA constr
+R23928:23933 untypedLC <> mo_mLA constr
+R23957:23962 untypedLC <> mo_mRA constr
+R23957:23962 untypedLC <> mo_mRA constr
+prf 24030:24045 <> more_outer_trans
+binder 24058:24060 <> oc1:289
+binder 24062:24064 <> oc2:290
+binder 24066:24068 <> oc3:291
+R24091:24094 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24073:24082 untypedLC <> more_outer ind
+R24084:24086 untypedLC <> oc1:289 var
+R24088:24090 untypedLC <> oc2:290 var
+R24113:24116 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24095:24104 untypedLC <> more_outer ind
+R24106:24108 untypedLC <> oc2:290 var
+R24110:24112 untypedLC <> oc3:291 var
+R24117:24126 untypedLC <> more_outer ind
+R24128:24130 untypedLC <> oc1:289 var
+R24132:24134 untypedLC <> oc3:291 var
+R24329:24334 untypedLC <> mo_Ici constr
+R24329:24334 untypedLC <> mo_Ici constr
+R24329:24334 untypedLC <> mo_Ici constr
+R24329:24334 untypedLC <> mo_Ici constr
+R24329:24334 untypedLC <> mo_Ici constr
+R24382:24387 untypedLC <> mo_mUL constr
+R24382:24387 untypedLC <> mo_mUL constr
+R24460:24465 untypedLC <> mo_mLA constr
+R24460:24465 untypedLC <> mo_mLA constr
+R24538:24543 untypedLC <> mo_mRA constr
+R24538:24543 untypedLC <> mo_mRA constr
+prf 24656:24683 <> more_outer_trans_complicated
+binder 24696:24698 <> oc1:292
+binder 24700:24702 <> oc2:293
+binder 24704:24706 <> oc3:294
+binder 24708:24709 <> ex:295
+R24728:24731 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24714:24720 untypedLC <> has_occ def
+R24722:24724 untypedLC <> oc1:292 var
+R24726:24727 untypedLC <> ex:295 var
+R24746:24749 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24732:24738 untypedLC <> has_occ def
+R24740:24742 untypedLC <> oc2:293 var
+R24744:24745 untypedLC <> ex:295 var
+R24764:24769 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24750:24756 untypedLC <> has_occ def
+R24758:24760 untypedLC <> oc3:294 var
+R24762:24763 untypedLC <> ex:295 var
+R24788:24791 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24770:24779 untypedLC <> more_outer ind
+R24781:24783 untypedLC <> oc1:292 var
+R24785:24787 untypedLC <> oc2:293 var
+R24810:24813 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24792:24801 untypedLC <> more_outer ind
+R24803:24805 untypedLC <> oc2:293 var
+R24807:24809 untypedLC <> oc3:294 var
+R24814:24823 untypedLC <> more_outer ind
+R24825:24827 untypedLC <> oc1:292 var
+R24829:24831 untypedLC <> oc3:294 var
+R25067:25072 untypedLC <> mo_Ici constr
+R25067:25072 untypedLC <> mo_Ici constr
+R25067:25072 untypedLC <> mo_Ici constr
+R25067:25072 untypedLC <> mo_Ici constr
+R25067:25072 untypedLC <> mo_Ici constr
+R25120:25125 untypedLC <> mo_mUL constr
+R25120:25125 untypedLC <> mo_mUL constr
+R25265:25270 untypedLC <> mo_mLA constr
+R25265:25270 untypedLC <> mo_mLA constr
+R25411:25416 untypedLC <> mo_mRA constr
+R25411:25416 untypedLC <> mo_mRA constr
+def 25607:25610 <> mlob
+binder 25612:25614 <> oc1:296
+binder 25616:25618 <> oc2:297
+R25622:25625 Coq.Init.Datatypes <> bool ind
+R25643:25645 untypedLC <> oc2:297 var
+R25638:25640 untypedLC <> oc1:296 var
+R25656:25658 untypedLC <> Ici constr
+R25661:25662 untypedLC <> LA constr
+R25665:25666 untypedLC <> UL constr
+R25674:25677 Coq.Init.Datatypes <> true constr
+R25683:25684 untypedLC <> LA constr
+R25689:25691 untypedLC <> Ici constr
+R25696:25699 Coq.Init.Datatypes <> true constr
+R25705:25706 untypedLC <> LA constr
+R25711:25712 untypedLC <> RA constr
+R25719:25722 Coq.Init.Datatypes <> true constr
+R25728:25730 untypedLC <> Ici constr
+R25733:25734 untypedLC <> RA constr
+R25741:25744 Coq.Init.Datatypes <> true constr
+R25750:25752 untypedLC <> Ici constr
+R25755:25756 untypedLC <> UL constr
+R25763:25766 Coq.Init.Datatypes <> true constr
+R25772:25773 untypedLC <> UL constr
+R25780:25781 untypedLC <> UL constr
+R25790:25793 untypedLC <> mlob:298 def
+R25799:25801 untypedLC <> oc2:297 var
+R25795:25797 untypedLC <> oc1:296 var
+R25807:25808 untypedLC <> LA constr
+R25815:25816 untypedLC <> LA constr
+R25825:25828 untypedLC <> mlob:298 def
+R25834:25836 untypedLC <> oc2:297 var
+R25830:25832 untypedLC <> oc1:296 var
+R25842:25843 untypedLC <> RA constr
+R25850:25851 untypedLC <> RA constr
+R25860:25863 untypedLC <> mlob:298 def
+R25869:25871 untypedLC <> oc2:297 var
+R25865:25867 untypedLC <> oc1:296 var
+R25886:25890 Coq.Init.Datatypes <> false constr
+ind 25937:25941 <> pcomp
+constr 25952:25953 <> Pe
+constr 25957:25958 <> Pl
+constr 25962:25963 <> Pg
+constr 25967:25968 <> Pn
+def 26030:26031 <> oi
+binder 26033:26035 <> oc1:303
+binder 26037:26039 <> oc2:304
+R26043:26047 untypedLC <> pcomp ind
+R26065:26067 untypedLC <> oc2:304 var
+R26060:26062 untypedLC <> oc1:303 var
+R26078:26080 untypedLC <> Ici constr
+R26083:26085 untypedLC <> Ici constr
+R26090:26091 untypedLC <> Pe constr
+R26097:26099 untypedLC <> Ici constr
+R26107:26108 untypedLC <> Pl constr
+R26117:26119 untypedLC <> Ici constr
+R26124:26125 untypedLC <> Pg constr
+R26131:26132 untypedLC <> UL constr
+R26139:26140 untypedLC <> UL constr
+R26149:26150 untypedLC <> oi:305 def
+R26156:26158 untypedLC <> oc2:304 var
+R26152:26154 untypedLC <> oc1:303 var
+R26164:26165 untypedLC <> LA constr
+R26172:26173 untypedLC <> LA constr
+R26182:26183 untypedLC <> oi:305 def
+R26189:26191 untypedLC <> oc2:304 var
+R26185:26187 untypedLC <> oc1:303 var
+R26197:26198 untypedLC <> RA constr
+R26205:26206 untypedLC <> RA constr
+R26215:26216 untypedLC <> oi:305 def
+R26222:26224 untypedLC <> oc2:304 var
+R26218:26220 untypedLC <> oc1:303 var
+R26239:26240 untypedLC <> Pn constr
+def 26286:26287 <> lr
+binder 26289:26291 <> oc1:308
+binder 26293:26295 <> oc2:309
+R26299:26308 Coq.Init.Datatypes <> comparison ind
+R26326:26328 untypedLC <> oc2:309 var
+R26321:26323 untypedLC <> oc1:308 var
+R26339:26341 untypedLC <> Ici constr
+R26344:26346 untypedLC <> Ici constr
+R26351:26352 Coq.Init.Datatypes <> Eq constr
+R26358:26360 untypedLC <> Ici constr
+R26363:26364 untypedLC <> UL constr
+R26371:26372 Coq.Init.Datatypes <> Lt constr
+R26378:26379 untypedLC <> UL constr
+R26384:26386 untypedLC <> Ici constr
+R26391:26392 Coq.Init.Datatypes <> Gt constr
+R26398:26399 untypedLC <> UL constr
+R26406:26407 untypedLC <> UL constr
+R26416:26417 untypedLC <> lr:310 def
+R26423:26425 untypedLC <> oc2:309 var
+R26419:26421 untypedLC <> oc1:308 var
+R26431:26432 untypedLC <> LA constr
+R26439:26440 untypedLC <> LA constr
+R26449:26450 untypedLC <> lr:310 def
+R26456:26458 untypedLC <> oc2:309 var
+R26452:26454 untypedLC <> oc1:308 var
+R26464:26465 untypedLC <> RA constr
+R26472:26473 untypedLC <> RA constr
+R26482:26483 untypedLC <> lr:310 def
+R26489:26491 untypedLC <> oc2:309 var
+R26485:26487 untypedLC <> oc1:308 var
+R26497:26498 untypedLC <> LA constr
+R26508:26509 Coq.Init.Datatypes <> Lt constr
+R26518:26519 untypedLC <> LA constr
+R26526:26527 Coq.Init.Datatypes <> Gt constr
+R26533:26534 untypedLC <> RA constr
+R26544:26545 Coq.Init.Datatypes <> Gt constr
+R26554:26555 untypedLC <> RA constr
+R26562:26563 Coq.Init.Datatypes <> Lt constr
+prf 26619:26623 <> oi_eq
+binder 26634:26636 <> oc1:313
+binder 26638:26640 <> oc2:314
+R26658:26661 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26653:26655 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26643:26644 untypedLC <> oi def
+R26646:26648 untypedLC <> oc1:313 var
+R26650:26652 untypedLC <> oc2:314 var
+R26656:26657 untypedLC <> Pe constr
+R26665:26667 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26662:26664 untypedLC <> oc1:313 var
+R26668:26670 untypedLC <> oc2:314 var
+R26705:26707 untypedLC <> occ ind
+binder 26695:26697 <> oc1:315
+binder 26699:26701 <> oc2:316
+binder 26710:26710 <> x:317
+R26721:26721 untypedLC <> x:317 var
+R26728:26729 untypedLC <> Pe constr
+R26734:26736 untypedLC <> oc2:316 var
+R26745:26747 untypedLC <> oc1:315 var
+R26705:26707 untypedLC <> occ ind
+binder 26695:26697 <> oc1:319
+binder 26699:26701 <> oc2:320
+binder 26710:26710 <> x:321
+R26721:26721 untypedLC <> x:321 var
+R26728:26729 untypedLC <> Pe constr
+R26734:26736 untypedLC <> oc2:320 var
+R26745:26747 untypedLC <> oc1:319 var
+binder 26780:26782 <> oc1:323
+binder 26784:26786 <> oc2:324
+R26814:26816 untypedLC <> oc2:324 var
+R26809:26811 untypedLC <> oc1:323 var
+R26833:26835 untypedLC <> Ici constr
+R26838:26840 untypedLC <> Ici constr
+binder 26849:26849 <> e:328
+R26854:26860 Coq.Init.Logic <> eq_refl constr
+R26872:26873 untypedLC <> UL constr
+R26880:26881 untypedLC <> UL constr
+binder 26894:26894 <> e:329
+R26899:26905 Coq.Init.Logic <> f_equal thm
+R26911:26914 untypedLC <> loop:325 var
+R26924:26924 untypedLC <> e:329 var
+R26920:26922 untypedLC <> oc2:324 var
+R26916:26918 untypedLC <> oc1:323 var
+R26907:26908 untypedLC <> UL constr
+R26937:26938 untypedLC <> LA constr
+R26945:26946 untypedLC <> LA constr
+binder 26959:26959 <> e:330
+R26964:26970 Coq.Init.Logic <> f_equal thm
+R26976:26979 untypedLC <> loop:325 var
+R26989:26989 untypedLC <> e:330 var
+R26985:26987 untypedLC <> oc2:324 var
+R26981:26983 untypedLC <> oc1:323 var
+R26972:26973 untypedLC <> LA constr
+R27002:27003 untypedLC <> RA constr
+R27010:27011 untypedLC <> RA constr
+binder 27024:27024 <> e:331
+R27029:27035 Coq.Init.Logic <> f_equal thm
+R27041:27044 untypedLC <> loop:325 var
+R27054:27054 untypedLC <> e:331 var
+R27050:27052 untypedLC <> oc2:324 var
+R27046:27048 untypedLC <> oc1:323 var
+R27037:27038 untypedLC <> RA constr
+binder 27083:27083 <> e:332
+R27088:27094 Coq.Init.Logic <> f_equal thm
+R27112:27112 untypedLC <> e:332 var
+R27103:27105 untypedLC <> oc1:323 var
+R27107:27109 untypedLC <> oc2:324 var
+binder 26780:26782 <> oc1:333
+binder 26784:26786 <> oc2:334
+R26814:26816 untypedLC <> oc2:334 var
+R26809:26811 untypedLC <> oc1:333 var
+R26833:26835 untypedLC <> Ici constr
+R26838:26840 untypedLC <> Ici constr
+binder 26849:26849 <> e:338
+R26854:26860 Coq.Init.Logic <> eq_refl constr
+R26872:26873 untypedLC <> UL constr
+R26880:26881 untypedLC <> UL constr
+binder 26894:26894 <> e:339
+R26899:26905 Coq.Init.Logic <> f_equal thm
+R26911:26914 untypedLC <> loop:335 var
+R26924:26924 untypedLC <> e:339 var
+R26920:26922 untypedLC <> oc2:334 var
+R26916:26918 untypedLC <> oc1:333 var
+R26907:26908 untypedLC <> UL constr
+R26937:26938 untypedLC <> LA constr
+R26945:26946 untypedLC <> LA constr
+binder 26959:26959 <> e:340
+R26964:26970 Coq.Init.Logic <> f_equal thm
+R26976:26979 untypedLC <> loop:335 var
+R26989:26989 untypedLC <> e:340 var
+R26985:26987 untypedLC <> oc2:334 var
+R26981:26983 untypedLC <> oc1:333 var
+R26972:26973 untypedLC <> LA constr
+R27002:27003 untypedLC <> RA constr
+R27010:27011 untypedLC <> RA constr
+binder 27024:27024 <> e:341
+R27029:27035 Coq.Init.Logic <> f_equal thm
+R27041:27044 untypedLC <> loop:335 var
+R27054:27054 untypedLC <> e:341 var
+R27050:27052 untypedLC <> oc2:334 var
+R27046:27048 untypedLC <> oc1:333 var
+R27037:27038 untypedLC <> RA constr
+binder 27083:27083 <> e:342
+R27088:27094 Coq.Init.Logic <> f_equal thm
+R27112:27112 untypedLC <> e:342 var
+R27103:27105 untypedLC <> oc1:333 var
+R27107:27109 untypedLC <> oc2:334 var
+def 27179:27190 <> strict_le_ou
+binder 27192:27194 <> oc1:343
+binder 27196:27198 <> oc2:344
+R27202:27205 Coq.Init.Datatypes <> bool ind
+R27218:27219 untypedLC <> oi def
+R27221:27223 untypedLC <> oc1:343 var
+R27225:27227 untypedLC <> oc2:344 var
+R27240:27241 untypedLC <> Pe constr
+R27246:27250 Coq.Init.Datatypes <> false constr
+R27258:27259 untypedLC <> Pl constr
+R27264:27267 Coq.Init.Datatypes <> true constr
+R27275:27276 untypedLC <> Pg constr
+R27281:27285 Coq.Init.Datatypes <> false constr
+R27293:27294 untypedLC <> Pn constr
+R27305:27306 untypedLC <> lr def
+R27308:27310 untypedLC <> oc1:343 var
+R27312:27314 untypedLC <> oc2:344 var
+R27337:27338 Coq.Init.Datatypes <> Eq constr
+R27343:27347 Coq.Init.Datatypes <> false constr
+R27365:27366 Coq.Init.Datatypes <> Lt constr
+R27371:27374 Coq.Init.Datatypes <> true constr
+R27392:27393 Coq.Init.Datatypes <> Gt constr
+R27398:27402 Coq.Init.Datatypes <> false constr
+prf 27541:27564 <> mlob_sameas_strict_le_ou
+binder 27577:27579 <> oc1:345
+binder 27581:27583 <> oc2:346
+binder 27585:27586 <> ex:347
+R27603:27606 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27589:27595 untypedLC <> has_red def
+R27597:27599 untypedLC <> oc1:345 var
+R27601:27602 untypedLC <> ex:347 var
+R27621:27624 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27607:27613 untypedLC <> has_red def
+R27615:27617 untypedLC <> oc2:346 var
+R27619:27620 untypedLC <> ex:347 var
+R27637:27639 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27625:27628 untypedLC <> mlob def
+R27630:27632 untypedLC <> oc1:345 var
+R27634:27636 untypedLC <> oc2:346 var
+R27640:27651 untypedLC <> strict_le_ou def
+R27653:27655 untypedLC <> oc1:345 var
+R27657:27659 untypedLC <> oc2:346 var
+def 28960:28969 <> horizontal
+R28977:28980 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28974:28976 untypedLC <> occ ind
+R28984:28988 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28981:28983 untypedLC <> occ ind
+R28989:28989 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29012:29016 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28990:28990 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29003:29007 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28995:28998 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28991:28994 Coq.Init.Datatypes <> unit ind
+R28999:29002 Coq.Init.Datatypes <> bool ind
+R29008:29011 Coq.Init.Datatypes <> bool ind
+R29017:29020 Coq.Init.Datatypes <> bool ind
+def 29034:29041 <> vertical
+R29049:29052 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29046:29048 untypedLC <> occ ind
+R29056:29060 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29083:29083 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29053:29055 untypedLC <> occ ind
+R29061:29061 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29074:29078 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29066:29069 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29062:29065 Coq.Init.Datatypes <> unit ind
+R29070:29073 Coq.Init.Datatypes <> bool ind
+R29079:29082 Coq.Init.Datatypes <> bool ind
+def 29098:29106 <> outermost
+R29110:29117 untypedLC <> vertical def
+binder 29126:29128 <> oc1:348
+binder 29130:29132 <> oc2:349
+R29147:29148 untypedLC <> oi def
+R29150:29152 untypedLC <> oc1:348 var
+R29154:29156 untypedLC <> oc2:349 var
+R29169:29170 untypedLC <> Pe constr
+R29184:29187 Coq.Init.Datatypes <> true constr
+R29195:29196 untypedLC <> Pl constr
+R29210:29213 Coq.Init.Datatypes <> true constr
+R29221:29222 untypedLC <> Pg constr
+R29236:29240 Coq.Init.Datatypes <> false constr
+R29248:29249 untypedLC <> Pn constr
+binder 29258:29258 <> b:350
+R29263:29263 untypedLC <> b:350 var
+R29265:29266 Coq.Init.Datatypes <> tt constr
+def 29289:29296 <> leftmost
+R29300:29309 untypedLC <> horizontal def
+binder 29318:29320 <> oc1:351
+binder 29322:29324 <> oc2:352
+binder 29337:29337 <> k:353
+R29342:29342 untypedLC <> k:353 var
+R29365:29366 untypedLC <> lr def
+R29368:29370 untypedLC <> oc1:351 var
+R29372:29374 untypedLC <> oc2:352 var
+R29387:29388 Coq.Init.Datatypes <> Eq constr
+R29393:29396 Coq.Init.Datatypes <> true constr
+R29404:29405 Coq.Init.Datatypes <> Lt constr
+R29410:29413 Coq.Init.Datatypes <> true constr
+R29421:29422 Coq.Init.Datatypes <> Gt constr
+R29427:29431 Coq.Init.Datatypes <> false constr
+def 29456:29460 <> le_ou
+binder 29462:29464 <> oc1:354
+binder 29466:29468 <> oc2:355
+R29473:29480 untypedLC <> leftmost def
+R29482:29484 untypedLC <> oc1:354 var
+R29486:29488 untypedLC <> oc2:355 var
+R29491:29499 untypedLC <> outermost def
+R29501:29503 untypedLC <> oc1:354 var
+R29505:29507 untypedLC <> oc2:355 var
+def 29522:29526 <> ri_ou
+binder 29528:29530 <> oc1:356
+binder 29532:29534 <> oc2:357
+R29539:29546 untypedLC <> leftmost def
+R29548:29550 untypedLC <> oc2:357 var
+R29552:29554 untypedLC <> oc1:356 var
+R29557:29565 untypedLC <> outermost def
+R29567:29569 untypedLC <> oc1:356 var
+R29571:29573 untypedLC <> oc2:357 var
+def 29588:29592 <> le_in
+binder 29594:29596 <> oc1:358
+binder 29598:29600 <> oc2:359
+R29605:29612 untypedLC <> leftmost def
+R29614:29616 untypedLC <> oc1:358 var
+R29618:29620 untypedLC <> oc2:359 var
+R29623:29631 untypedLC <> outermost def
+R29633:29635 untypedLC <> oc2:359 var
+R29637:29639 untypedLC <> oc1:358 var
+def 29654:29658 <> ri_in
+binder 29660:29662 <> oc1:360
+binder 29664:29666 <> oc2:361
+R29671:29678 untypedLC <> leftmost def
+R29680:29682 untypedLC <> oc2:361 var
+R29684:29686 untypedLC <> oc1:360 var
+R29689:29697 untypedLC <> outermost def
+R29699:29701 untypedLC <> oc2:361 var
+R29703:29705 untypedLC <> oc1:360 var
+def 30585:30587 <> min
+binder 30590:30590 <> A:362
+R30601:30604 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30600:30600 untypedLC <> A:362 var
+R30606:30609 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30605:30605 untypedLC <> A:362 var
+R30610:30613 Coq.Init.Datatypes <> bool ind
+binder 30594:30596 <> cmp:363
+binder 30616:30616 <> x:364
+binder 30618:30618 <> y:365
+R30626:30628 untypedLC <> cmp:363 var
+R30632:30632 untypedLC <> y:365 var
+R30630:30630 untypedLC <> x:364 var
+R30646:30646 untypedLC <> y:365 var
+R30639:30639 untypedLC <> x:364 var
+def 30659:30666 <> minlist1
+binder 30669:30669 <> A:366
+R30680:30683 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30679:30679 untypedLC <> A:366 var
+R30685:30688 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30684:30684 untypedLC <> A:366 var
+R30689:30692 Coq.Init.Datatypes <> bool ind
+binder 30673:30675 <> cmp:367
+binder 30695:30695 <> x:368
+binder 30697:30697 <> l:369
+R30701:30701 untypedLC <> A:366 var
+R30714:30714 untypedLC <> l:369 var
+R30725:30726 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R30731:30731 untypedLC <> x:368 var
+R30739:30742 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R30749:30751 untypedLC <> min def
+R30760:30767 untypedLC <> minlist1:370 def
+R30769:30771 untypedLC <> cmp:367 var
+R30757:30757 untypedLC <> x:368 var
+R30753:30755 untypedLC <> cmp:367 var
+def 30799:30807 <> non_empty
+binder 30810:30810 <> A:372
+R30817:30820 Coq.Init.Datatypes <> list ind
+R30822:30822 untypedLC <> A:372 var
+binder 30814:30814 <> l:373
+R30843:30843 untypedLC <> l:373 var
+R30854:30855 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R30860:30864 Coq.Init.Logic <> False ind
+R30872:30875 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R30882:30885 Coq.Init.Logic <> True ind
+def 30906:30911 <> depres
+binder 30914:30914 <> A:375
+R30921:30924 Coq.Init.Datatypes <> list ind
+R30926:30926 untypedLC <> A:375 var
+binder 30918:30918 <> l:376
+R30947:30947 untypedLC <> l:376 var
+R30958:30959 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R30964:30967 Coq.Init.Datatypes <> list ind
+R30969:30969 untypedLC <> A:375 var
+R30977:30980 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R30988:30990 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R30987:30987 untypedLC <> A:375 var
+R30991:30994 Coq.Init.Datatypes <> list ind
+R30996:30996 untypedLC <> A:375 var
+def 31017:31026 <> minlistdep
+binder 31029:31029 <> A:378
+R31040:31043 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31039:31039 untypedLC <> A:378 var
+R31045:31048 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31044:31044 untypedLC <> A:378 var
+R31049:31052 Coq.Init.Datatypes <> bool ind
+binder 31033:31035 <> cmp:379
+binder 31055:31055 <> l:380
+R31059:31064 untypedLC <> depres def
+R31066:31066 untypedLC <> l:380 var
+R31079:31079 untypedLC <> l:380 var
+R31090:31091 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R31096:31096 untypedLC <> l:380 var
+R31104:31107 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R31114:31114 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R31133:31134 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R31136:31136 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R31115:31122 untypedLC <> minlist1 def
+R31124:31126 untypedLC <> cmp:379 var
+R31135:31135 untypedLC <> l:380 var
+def 31157:31160 <> hdtl
+binder 31163:31163 <> A:382
+R31170:31173 Coq.Init.Datatypes <> list ind
+R31175:31175 untypedLC <> A:382 var
+binder 31167:31167 <> l:383
+R31191:31194 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31180:31188 untypedLC <> non_empty def
+R31190:31190 untypedLC <> l:383 var
+R31196:31198 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R31195:31195 untypedLC <> A:382 var
+R31199:31202 Coq.Init.Datatypes <> list ind
+R31204:31204 untypedLC <> A:382 var
+R31217:31217 untypedLC <> l:383 var
+R31228:31229 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+binder 31238:31238 <> F:385
+R31249:31249 untypedLC <> F:385 var
+R31266:31269 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R31285:31285 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R31288:31289 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R31292:31292 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+def 31313:31319 <> minlist
+binder 31322:31322 <> A:387
+R31333:31336 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31332:31332 untypedLC <> A:387 var
+R31338:31341 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31337:31337 untypedLC <> A:387 var
+R31342:31345 Coq.Init.Datatypes <> bool ind
+binder 31326:31328 <> cmp:388
+binder 31348:31348 <> l:389
+R31363:31366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31352:31360 untypedLC <> non_empty def
+R31362:31362 untypedLC <> l:389 var
+R31367:31367 untypedLC <> A:387 var
+R31380:31380 untypedLC <> l:389 var
+R31391:31392 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+binder 31401:31401 <> F:391
+R31412:31412 untypedLC <> F:391 var
+R31429:31432 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R31448:31455 untypedLC <> minlist1 def
+R31457:31459 untypedLC <> cmp:388 var
+def 31666:31670 <> fnorm
+binder 31673:31674 <> ex:393
+R31678:31681 Coq.Init.Datatypes <> bool ind
+R31694:31695 untypedLC <> ex:393 var
+R31706:31708 untypedLC <> Var constr
+R31728:31731 Coq.Init.Datatypes <> true constr
+R31737:31739 untypedLC <> App constr
+R31742:31744 untypedLC <> Lam constr
+R31759:31763 Coq.Init.Datatypes <> false constr
+R31769:31771 untypedLC <> App constr
+R31791:31791 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R31800:31805 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R31814:31814 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R31792:31796 untypedLC <> fnorm:394 def
+R31806:31810 untypedLC <> fnorm:394 def
+R31820:31822 untypedLC <> Lam constr
+R31842:31846 untypedLC <> fnorm:394 def
+def 31957:31962 <> is_wnf
+binder 31965:31966 <> ex:396
+R31970:31973 Coq.Init.Datatypes <> bool ind
+R31986:31987 untypedLC <> ex:396 var
+R31998:32000 untypedLC <> Var constr
+R32020:32023 Coq.Init.Datatypes <> true constr
+R32029:32031 untypedLC <> Lam constr
+R32051:32054 Coq.Init.Datatypes <> true constr
+R32060:32062 untypedLC <> App constr
+R32065:32067 untypedLC <> Lam constr
+R32082:32086 Coq.Init.Datatypes <> false constr
+R32092:32094 untypedLC <> App constr
+R32114:32114 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R32124:32129 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R32139:32139 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R32115:32120 untypedLC <> is_wnf:397 def
+R32130:32135 untypedLC <> is_wnf:397 def
+def 32247:32252 <> is_hnf
+binder 32255:32256 <> ex:399
+R32260:32263 Coq.Init.Datatypes <> bool ind
+R32276:32277 untypedLC <> ex:399 var
+R32288:32290 untypedLC <> Var constr
+R32310:32313 Coq.Init.Datatypes <> true constr
+R32319:32321 untypedLC <> App constr
+R32324:32326 untypedLC <> Lam constr
+R32341:32345 Coq.Init.Datatypes <> false constr
+R32351:32353 untypedLC <> App constr
+R32372:32377 untypedLC <> is_hnf:400 def
+R32386:32388 untypedLC <> Lam constr
+R32408:32413 untypedLC <> is_hnf:400 def
+def 32530:32536 <> is_whnf
+binder 32539:32540 <> ex:402
+R32544:32547 Coq.Init.Datatypes <> bool ind
+R32560:32561 untypedLC <> ex:402 var
+R32572:32574 untypedLC <> Var constr
+R32594:32597 Coq.Init.Datatypes <> true constr
+R32603:32605 untypedLC <> Lam constr
+R32625:32628 Coq.Init.Datatypes <> true constr
+R32634:32636 untypedLC <> App constr
+R32639:32641 untypedLC <> Lam constr
+R32656:32660 Coq.Init.Datatypes <> false constr
+R32666:32668 untypedLC <> App constr
+R32687:32693 untypedLC <> is_whnf:403 def
+def 32846:32852 <> red1_lo
+binder 32854:32855 <> ex:405
+R32859:32864 Coq.Init.Datatypes <> option ind
+R32866:32869 untypedLC <> lexp ind
+R32882:32883 untypedLC <> ex:405 var
+R32894:32896 untypedLC <> App constr
+R32911:32913 Coq.Init.Logic <> ex2 ind
+R32899:32901 untypedLC <> Lam constr
+R32918:32921 Coq.Init.Datatypes <> Some constr
+R32924:32928 untypedLC <> subst def
+R32946:32948 untypedLC <> App constr
+R32954:32956 Coq.Init.Logic <> ex2 ind
+R32977:32983 untypedLC <> red1_lo:406 def
+R33025:33028 Coq.Init.Datatypes <> None constr
+R33040:33046 untypedLC <> red1_lo:406 def
+R33098:33101 Coq.Init.Datatypes <> None constr
+R33106:33109 Coq.Init.Datatypes <> None constr
+R33151:33154 Coq.Init.Datatypes <> Some constr
+R33164:33167 Coq.Init.Datatypes <> Some constr
+R33170:33172 untypedLC <> App constr
+R33256:33259 Coq.Init.Datatypes <> Some constr
+R33269:33272 Coq.Init.Datatypes <> Some constr
+R33275:33277 untypedLC <> App constr
+R33325:33327 untypedLC <> Lam constr
+R33355:33361 untypedLC <> red1_lo:406 def
+R33402:33405 Coq.Init.Datatypes <> None constr
+R33410:33413 Coq.Init.Datatypes <> None constr
+R33444:33447 Coq.Init.Datatypes <> Some constr
+R33457:33460 Coq.Init.Datatypes <> Some constr
+R33463:33465 untypedLC <> Lam constr
+R33516:33519 Coq.Init.Datatypes <> None constr
+def 33593:33600 <> red1_low
+binder 33602:33603 <> ex:408
+R33607:33612 Coq.Init.Datatypes <> option ind
+R33614:33617 untypedLC <> lexp ind
+R33630:33631 untypedLC <> ex:408 var
+R33642:33644 untypedLC <> App constr
+R33659:33661 Coq.Init.Logic <> ex2 ind
+R33647:33649 untypedLC <> Lam constr
+R33666:33669 Coq.Init.Datatypes <> Some constr
+R33672:33676 untypedLC <> subst def
+R33694:33696 untypedLC <> App constr
+R33702:33704 Coq.Init.Logic <> ex2 ind
+R33725:33732 untypedLC <> red1_low:409 def
+R33774:33777 Coq.Init.Datatypes <> None constr
+R33783:33786 Coq.Init.Datatypes <> None constr
+R33818:33821 Coq.Init.Datatypes <> Some constr
+R33831:33834 Coq.Init.Datatypes <> Some constr
+R33837:33839 untypedLC <> App constr
+R33892:33895 Coq.Init.Datatypes <> None constr
+def 33965:33971 <> red1_ro
+binder 33973:33974 <> ex:411
+R33978:33983 Coq.Init.Datatypes <> option ind
+R33985:33988 untypedLC <> lexp ind
+R34001:34002 untypedLC <> ex:411 var
+R34013:34015 untypedLC <> App constr
+R34030:34032 Coq.Init.Logic <> ex2 ind
+R34018:34020 untypedLC <> Lam constr
+R34045:34051 untypedLC <> red1_ro:412 def
+R34094:34097 Coq.Init.Datatypes <> None constr
+R34107:34110 Coq.Init.Datatypes <> Some constr
+R34113:34117 untypedLC <> subst def
+R34162:34165 Coq.Init.Datatypes <> Some constr
+R34175:34178 Coq.Init.Datatypes <> Some constr
+R34181:34183 untypedLC <> App constr
+R34186:34188 untypedLC <> Lam constr
+R34273:34275 untypedLC <> App constr
+R34281:34283 Coq.Init.Logic <> ex2 ind
+R34304:34310 untypedLC <> red1_ro:412 def
+R34352:34355 Coq.Init.Datatypes <> None constr
+R34367:34373 untypedLC <> red1_ro:412 def
+R34425:34428 Coq.Init.Datatypes <> None constr
+R34433:34436 Coq.Init.Datatypes <> None constr
+R34478:34481 Coq.Init.Datatypes <> Some constr
+R34491:34494 Coq.Init.Datatypes <> Some constr
+R34497:34499 untypedLC <> App constr
+R34583:34586 Coq.Init.Datatypes <> Some constr
+R34596:34599 Coq.Init.Datatypes <> Some constr
+R34602:34604 untypedLC <> App constr
+R34652:34654 untypedLC <> Lam constr
+R34682:34688 untypedLC <> red1_lo def
+R34729:34732 Coq.Init.Datatypes <> None constr
+R34737:34740 Coq.Init.Datatypes <> None constr
+R34771:34774 Coq.Init.Datatypes <> Some constr
+R34784:34787 Coq.Init.Datatypes <> Some constr
+R34790:34792 untypedLC <> Lam constr
+R34843:34846 Coq.Init.Datatypes <> None constr
+def 34921:34928 <> red1_row
+binder 34930:34931 <> ex:414
+R34935:34940 Coq.Init.Datatypes <> option ind
+R34942:34945 untypedLC <> lexp ind
+R34958:34959 untypedLC <> ex:414 var
+R34970:34972 untypedLC <> App constr
+R34987:34989 Coq.Init.Logic <> ex2 ind
+R34975:34977 untypedLC <> Lam constr
+R35002:35009 untypedLC <> red1_row:415 def
+R35052:35055 Coq.Init.Datatypes <> None constr
+R35065:35068 Coq.Init.Datatypes <> Some constr
+R35071:35075 untypedLC <> subst def
+R35120:35123 Coq.Init.Datatypes <> Some constr
+R35133:35136 Coq.Init.Datatypes <> Some constr
+R35139:35141 untypedLC <> App constr
+R35144:35146 untypedLC <> Lam constr
+R35231:35233 untypedLC <> App constr
+R35239:35241 Coq.Init.Logic <> ex2 ind
+R35262:35269 untypedLC <> red1_row:415 def
+R35311:35314 Coq.Init.Datatypes <> None constr
+R35326:35333 untypedLC <> red1_row:415 def
+R35385:35388 Coq.Init.Datatypes <> None constr
+R35393:35396 Coq.Init.Datatypes <> None constr
+R35438:35441 Coq.Init.Datatypes <> Some constr
+R35451:35454 Coq.Init.Datatypes <> Some constr
+R35457:35459 untypedLC <> App constr
+R35543:35546 Coq.Init.Datatypes <> Some constr
+R35556:35559 Coq.Init.Datatypes <> Some constr
+R35562:35564 untypedLC <> App constr
+R35617:35620 Coq.Init.Datatypes <> None constr
+def 35705:35708 <> red1
+binder 35710:35711 <> rs:417
+binder 35713:35714 <> ex:418
+R35718:35721 untypedLC <> lexp ind
+R35734:35735 untypedLC <> rs:417 var
+R35737:35738 untypedLC <> ex:418 var
+R35749:35752 Coq.Init.Datatypes <> None constr
+R35757:35758 untypedLC <> ex:418 var
+R35764:35767 Coq.Init.Datatypes <> Some constr
+def 35853:35859 <> toolong
+R35864:35864 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R35866:35866 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R35868:35868 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R35870:35870 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R35872:35872 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R35874:35875 untypedLC <> :::'\'_x_'..'_x_'·'_x not
+R35865:35865 untypedLC <> a constr
+R35867:35867 untypedLC <> b constr
+R35869:35869 untypedLC <> o constr
+R35871:35871 untypedLC <> r constr
+R35873:35873 untypedLC <> t constr
+R35877:35877 untypedLC <> t constr
+R35879:35879 untypedLC <> o constr
+R35881:35881 untypedLC <> o constr
+R35885:35885 untypedLC <> l constr
+R35887:35887 untypedLC <> o constr
+R35889:35889 untypedLC <> n constr
+R35891:35891 untypedLC <> g constr
+def 35968:35971 <> redn
+binder 35973:35974 <> rs:419
+binder 35976:35977 <> nx:420
+binder 35979:35980 <> ex:421
+R35984:35987 untypedLC <> lexp ind
+R36000:36001 untypedLC <> nx:420 var
+R36020:36026 untypedLC <> toolong def
+R36032:36032 Coq.Init.Datatypes <> S constr
+R36046:36047 untypedLC <> rs:419 var
+R36049:36050 untypedLC <> ex:421 var
+R36068:36071 Coq.Init.Datatypes <> None constr
+R36076:36077 untypedLC <> ex:421 var
+R36090:36093 Coq.Init.Datatypes <> Some constr
+R36102:36105 untypedLC <> redn:422 def
+R36110:36111 untypedLC <> nx:420 var
+R36107:36108 untypedLC <> rs:419 var
+ind 36306:36310 <> llexp
+constr 36318:36321 <> vide
+constr 36334:36337 <> step
+R36325:36329 untypedLC <> llexp:424 ind
+R36345:36348 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36341:36344 untypedLC <> lexp ind
+R36354:36357 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36349:36353 untypedLC <> llexp:424 ind
+R36358:36362 untypedLC <> llexp:424 ind
+R36389:36392 untypedLC <> step constr
+R36396:36399 untypedLC <> vide constr
+not 36375:36375 <> :::'{'_x_'}'
+R36458:36461 untypedLC <> step constr
+R36466:36469 untypedLC <> step constr
+R36477:36480 untypedLC <> step constr
+R36484:36487 untypedLC <> vide constr
+not 36413:36413 <> :::'{'_x_'-β->'_x_'-β->'_'..'_'-β->'_x_'}'
+def 36812:36819 <> showstep
+binder 36821:36822 <> ex:426
+R36827:36830 untypedLC <> step constr
+R36832:36833 untypedLC <> ex:426 var
+def 36845:36849 <> shown
+binder 36851:36852 <> rs:427
+binder 36854:36855 <> nx:428
+binder 36857:36858 <> ex:429
+R36871:36872 untypedLC <> nx:428 var
+R36891:36894 untypedLC <> step constr
+R36896:36902 untypedLC <> toolong def
+R36904:36907 untypedLC <> vide constr
+R36913:36913 Coq.Init.Datatypes <> S constr
+R36927:36928 untypedLC <> rs:427 var
+R36930:36931 untypedLC <> ex:429 var
+R36952:36955 Coq.Init.Datatypes <> None constr
+R36960:36967 untypedLC <> showstep def
+R36969:36970 untypedLC <> ex:429 var
+R36972:36975 untypedLC <> vide constr
+R36991:36994 Coq.Init.Datatypes <> Some constr
+R37003:37010 untypedLC <> showstep def
+R37012:37013 untypedLC <> ex:429 var
+R37016:37020 untypedLC <> shown:430 def
+R37025:37026 untypedLC <> nx:428 var
+R37022:37023 untypedLC <> rs:427 var
+def 37183:37190 <> showncmp
+R37199:37202 Coq.Init.Datatypes <> bool ind
+binder 37193:37196 <> weak:432
+binder 37205:37207 <> cmp:433
+binder 37209:37210 <> nx:434
+binder 37212:37213 <> ex:435
+R37226:37227 untypedLC <> nx:434 var
+R37246:37249 untypedLC <> step constr
+R37251:37257 untypedLC <> toolong def
+R37259:37262 untypedLC <> vide constr
+R37268:37268 Coq.Init.Datatypes <> S constr
+R37293:37309 untypedLC <> nbd_occredexes_of def
+R37311:37312 untypedLC <> ex:435 var
+binder 37284:37288 <> nroex:438
+R37339:37344 Coq.Lists.List <> filter def
+R37369:37373 untypedLC <> nroex:438 var
+R37347:37357 untypedLC <> lift_fct_nb def
+R37365:37366 untypedLC <> ex:435 var
+R37359:37363 untypedLC <> no_UL def
+binder 37325:37334 <> nroex_noUL:439
+R37405:37408 untypedLC <> weak:432 var
+R37431:37435 untypedLC <> nroex:438 var
+R37415:37424 untypedLC <> nroex_noUL:439 var
+binder 37386:37397 <> actual_nroex:440
+R37450:37461 untypedLC <> actual_nroex:440 var
+R37474:37475 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R37480:37483 untypedLC <> step constr
+R37485:37486 untypedLC <> ex:435 var
+R37488:37491 untypedLC <> vide constr
+R37503:37506 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R37535:37542 untypedLC <> minlist1 def
+R37545:37555 untypedLC <> lift_cmp_nb def
+R37561:37562 untypedLC <> ex:435 var
+R37557:37559 untypedLC <> cmp:433 var
+binder 37525:37530 <> chosen:442
+R37595:37601 untypedLC <> beta_at def
+R37603:37604 untypedLC <> ex:435 var
+R37607:37609 Coq.Init.Datatypes <> snd def
+R37611:37616 untypedLC <> chosen:442 var
+binder 37588:37590 <> ex':443
+R37628:37631 untypedLC <> step constr
+R37633:37634 untypedLC <> ex:435 var
+R37637:37644 untypedLC <> showncmp:436 def
+R37658:37660 untypedLC <> ex':443 var
+R37655:37656 untypedLC <> nx:434 var
+R37651:37653 untypedLC <> cmp:433 var
+R37646:37649 untypedLC <> weak:432 var
+def 37805:37812 <> red1_cbn
+binder 37814:37815 <> ex:444
+R37820:37823 untypedLC <> red1 def
+R37826:37832 untypedLC <> red1_lo def
+R37834:37835 untypedLC <> ex:444 var
+def 37849:37855 <> red_cbn
+binder 37858:37859 <> ex:445
+R37864:37867 untypedLC <> redn def
+R37870:37876 untypedLC <> red1_lo def
+R37883:37884 untypedLC <> ex:445 var
+def 37898:37907 <> show_cbn_0
+binder 37909:37910 <> ex:446
+R37915:37919 untypedLC <> shown def
+R37921:37927 untypedLC <> red1_lo def
+R37933:37934 untypedLC <> ex:446 var
+def 37969:37978 <> show_cbn_l
+binder 37980:37981 <> ex:447
+R37986:37993 untypedLC <> showncmp def
+R37995:37999 Coq.Init.Datatypes <> false constr
+R38001:38005 untypedLC <> le_ou def
+R38011:38012 untypedLC <> ex:447 var
+def 38026:38035 <> show_cbn_r
+binder 38037:38038 <> ex:448
+R38043:38050 untypedLC <> showncmp def
+R38052:38056 Coq.Init.Datatypes <> false constr
+R38058:38062 untypedLC <> ri_ou def
+R38068:38069 untypedLC <> ex:448 var
+def 38083:38093 <> show_wcbn_l
+binder 38095:38096 <> ex:449
+R38101:38108 untypedLC <> showncmp def
+R38110:38113 Coq.Init.Datatypes <> true constr
+R38115:38119 untypedLC <> le_ou def
+R38125:38126 untypedLC <> ex:449 var
+def 38140:38150 <> show_wcbn_r
+binder 38152:38153 <> ex:450
+R38158:38165 untypedLC <> showncmp def
+R38167:38170 Coq.Init.Datatypes <> true constr
+R38172:38176 untypedLC <> ri_ou def
+R38182:38183 untypedLC <> ex:450 var
+def 38197:38204 <> show_cbn
+R38209:38218 untypedLC <> show_cbn_l def
+def 38232:38240 <> show_wcbn
+R38245:38255 untypedLC <> show_wcbn_l def
+def 38341:38350 <> show_cbv_l
+binder 38352:38353 <> ex:451
+R38358:38365 untypedLC <> showncmp def
+R38367:38371 Coq.Init.Datatypes <> false constr
+R38373:38377 untypedLC <> le_in def
+R38383:38384 untypedLC <> ex:451 var
+def 38398:38407 <> show_cbv_r
+binder 38409:38410 <> ex:452
+R38415:38422 untypedLC <> showncmp def
+R38424:38428 Coq.Init.Datatypes <> false constr
+R38430:38434 untypedLC <> ri_in def
+R38440:38441 untypedLC <> ex:452 var
+def 38455:38462 <> show_cbv
+R38467:38476 untypedLC <> show_cbv_r def
+def 38571:38581 <> show_wcbv_l
+binder 38583:38584 <> ex:453
+R38589:38596 untypedLC <> showncmp def
+R38598:38601 Coq.Init.Datatypes <> true constr
+R38603:38607 untypedLC <> le_in def
+R38613:38614 untypedLC <> ex:453 var
+def 38628:38638 <> show_wcbv_r
+binder 38640:38641 <> ex:454
+R38646:38653 untypedLC <> showncmp def
+R38655:38658 Coq.Init.Datatypes <> true constr
+R38660:38664 untypedLC <> ri_in def
+R38670:38671 untypedLC <> ex:454 var
+def 38685:38693 <> show_wcbv
+R38698:38708 untypedLC <> show_wcbv_r def
+def 38795:38802 <> red1_cbv
+binder 38804:38805 <> ex:455
+R38810:38813 untypedLC <> red1 def
+R38816:38822 untypedLC <> red1_ro def
+R38824:38825 untypedLC <> ex:455 var
+def 38839:38845 <> red_cbv
+binder 38848:38849 <> ex:456
+R38854:38857 untypedLC <> redn def
+R38860:38866 untypedLC <> red1_ro def
+R38873:38874 untypedLC <> ex:456 var
+def 38888:38897 <> show_cbv_0
+binder 38899:38900 <> ex:457
+R38905:38909 untypedLC <> shown def
+R38911:38917 untypedLC <> red1_ro def
+R38923:38924 untypedLC <> ex:457 var
+def 39040:39048 <> red1_wcbn
+binder 39050:39051 <> ex:458
+R39056:39059 untypedLC <> red1 def
+R39062:39069 untypedLC <> red1_low def
+R39071:39072 untypedLC <> ex:458 var
+def 39086:39093 <> red_wcbn
+binder 39096:39097 <> ex:459
+R39102:39105 untypedLC <> redn def
+R39108:39115 untypedLC <> red1_low def
+R39122:39123 untypedLC <> ex:459 var
+def 39137:39147 <> show_wcbn_0
+binder 39149:39150 <> ex:460
+R39155:39159 untypedLC <> shown def
+R39161:39168 untypedLC <> red1_low def
+R39174:39175 untypedLC <> ex:460 var
+def 39280:39288 <> red1_wcbv
+binder 39290:39291 <> ex:461
+R39296:39299 untypedLC <> red1 def
+R39302:39309 untypedLC <> red1_row def
+R39311:39312 untypedLC <> ex:461 var
+def 39326:39333 <> red_wcbv
+binder 39336:39337 <> ex:462
+R39342:39345 untypedLC <> redn def
+R39348:39355 untypedLC <> red1_row def
+R39362:39363 untypedLC <> ex:462 var
+def 39377:39387 <> show_wcbv_0
+binder 39389:39390 <> ex:463
+R39395:39399 untypedLC <> shown def
+R39401:39408 untypedLC <> red1_row def
+R39414:39415 untypedLC <> ex:463 var
+def 39508:39514 <> eq_lexp
+binder 39516:39518 <> tx1:464
+binder 39520:39522 <> tx2:465
+R39525:39528 Coq.Init.Datatypes <> bool ind
+R39546:39548 untypedLC <> tx2:465 var
+R39541:39543 untypedLC <> tx1:464 var
+R39559:39561 untypedLC <> Var constr
+R39568:39570 untypedLC <> Var constr
+R39587:39594 untypedLC <> eqb_Name def
+R39608:39610 untypedLC <> App constr
+R39621:39623 untypedLC <> App constr
+R39636:39636 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R39652:39657 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R39673:39673 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R39637:39643 untypedLC <> eq_lexp:466 def
+R39658:39664 untypedLC <> eq_lexp:466 def
+R39679:39681 untypedLC <> Lam constr
+R39692:39694 untypedLC <> Lam constr
+R39710:39717 untypedLC <> eqb_Name def
+R39785:39791 untypedLC <> eq_lexp:466 def
+R39798:39802 untypedLC <> subst def
+R39809:39811 untypedLC <> Var constr
+R39818:39820 untypedLC <> tx2:465 var
+R39793:39795 untypedLC <> tx1:464 var
+R39732:39738 untypedLC <> eq_lexp:466 def
+R39744:39746 untypedLC <> tx2:465 var
+R39740:39742 untypedLC <> tx1:464 var
+R39855:39859 Coq.Init.Datatypes <> false constr
+def 39943:39952 <> equiv_lexp
+R39961:39964 untypedLC <> lexp ind
+binder 39955:39956 <> e1:469
+binder 39958:39959 <> e2:470
+R39970:39976 untypedLC <> eq_lexp def
+R39979:39985 untypedLC <> red_cbn def
+R39987:39988 untypedLC <> e1:469 var
+R39992:39998 untypedLC <> red_cbn def
+R40000:40001 untypedLC <> e2:470 var
+def 40017:40028 <> equiv_lexp_P
+R40037:40040 untypedLC <> lexp ind
+binder 40031:40032 <> e1:471
+binder 40034:40035 <> e2:472
+R40046:40055 untypedLC <> equiv_lexp def
+R40057:40058 untypedLC <> e1:471 var
+R40060:40061 untypedLC <> e2:472 var
+R40088:40099 untypedLC <> equiv_lexp_P def
+not 40074:40074 <> :::x_'=='_x

@@ -65,6 +65,28 @@ Compute equiv_lexp ( cor ctr cfa ) ctr.
 Compute equiv_lexp ( cor cfa cfa ) cfa.
 
 (* Bonus *)
+(*
+Exercice 3- Codage non factorise
+*)
+Definition cand_nf := \a b~cif a (cif b ctr cfa) cfa. 
+Definition cor_nf := \a b~cif a ctr (cif b ctr cfa).
+
+(* Exercice 4 - Tester *)
+(* Verifier cand par rapport a la table de verite *)
+Compute equiv_lexp ( cand_nf ctr ctr ) ctr.
+Compute equiv_lexp ( cand_nf cfa ctr ) cfa.
+Compute equiv_lexp ( cand_nf ctr cfa ) cfa.
+Compute equiv_lexp ( cand_nf cfa cfa ) cfa.
+
+(* Format equiv_lexp (expression) output-expectation *)
+(* Verifier cor par rapport a la table de verite *)
+Compute equiv_lexp ( cor_nf ctr ctr ) ctr.
+Compute equiv_lexp ( cor_nf cfa ctr ) ctr.
+Compute equiv_lexp ( cor_nf ctr cfa ) ctr.
+Compute equiv_lexp ( cor_nf cfa cfa ) cfa.
+
+
+
 (* A COMPLETER *)
 
 (*********************************************************)
@@ -294,6 +316,7 @@ Compute equiv_lexp ( iter c5 csucc c2 ) c7.
 Definition c18 := cadd c9 c9.
 Compute equiv_lexp ( iter c9 csucc c9 ) c18.
 
+
 (*
 Exercice 2 - Coder dans Coq la fonction cpred1 qui à partir d’un couple (x,y)
              donné en argument rend le couple (y,y+1). 
@@ -316,11 +339,10 @@ Exercice 3 - Coder dans Coq le prédécesseur d’un entier de Church
 *)
 Definition cpl00 := cpl c0 c0.
 Definition cpred := \n~fst (iter n cpred1 cpl00).
-Definition cpred_simple := \n~fst (iter n cpred1 cpl00).
+Definition cpred_simple := \n~fst (n cpred1 cpl00).
 (*
 Tester sur quelques exemples dont c0.
 *)
-
 Compute equiv_lexp ( cpred c1 ) c0.
 Compute equiv_lexp ( cpred c2 ) c1.
 Compute equiv_lexp ( cpred c3 ) c2.
@@ -330,6 +352,7 @@ Compute equiv_lexp ( cpred c6 ) c5.
 Compute equiv_lexp ( cpred c7 ) c6.
 Compute equiv_lexp ( cpred c8 ) c7.
 Compute equiv_lexp ( cpred (cmult c5 c6) ) (cadd (cmult c3 c9) c2).
+Compute equiv_lexp ( cpred_simple c8 ) c7.
 
 
 (*********************************************************)
@@ -339,18 +362,19 @@ Compute equiv_lexp ( cpred (cmult c5 c6) ) (cadd (cmult c3 c9) c2).
 Exercice 2 - Définir dans Coq  Y comme une lexp
 *)
 
-(* Definition Cn := \n~cif (ceq0 n) c0 (Cn (cpred cn)). *)
 
 Definition Y := \f~(\x~f (x x))(\x~f (x x)).
+
 
 (* 
    On peut vérifier ici que les deux exemples trouvés à l'exercice précédent
    ont ou n'ont pas de forme normale 
 *)
+(* Exemple a de forme normale *)
+Compute red_cbn ( Y c0 ).
+(* Exemple n'a pas de forme normale *)
+Compute red_cbn ( Y c1 ).
 
-Compute (Y ... )
-Compute (Y ... )
-...
 
 (*********************************************************)
 (******* VII - Codage de définitions récursives  *********)
@@ -360,21 +384,28 @@ Exercice 1 - En utilisant les opérateurs définis précédemment (cif, ceq0, cm
              définir dans Coq la fonctionnelle associée à fact.
 *)
 
-Definition cfonc := \f n· ...
+Definition cfonc := \f n· cif (ceq0 n) c1 ( cmult n ( f (cpred n) ) ).
+
+Compute equiv_lexp ( cfonc Y c0 ) c1.
+Compute equiv_lexp ( cfonc Y c1 ) c1.
 
 (*
 Exercice 2 - Définir la fonction factorielle dans Coq comme une lexp.
 *)
 
-Definition cfact := ...
+Definition cfact := Y cfonc.
 
 (*
    La tester avec red_cbn sur de tout petits entiers (< 4).
 *)
+(* Tester cas particulier c0 c1 *)
+Compute equiv_lexp ( cfact c0 ) c1.
+Compute equiv_lexp ( cfact c1 ) c1.
 
-Compute ( ... )
-Compute ( ... )
-...
+(* Tester cas general *)
+Compute equiv_lexp ( cfact c2 ) c2.
+Compute equiv_lexp ( cfact c3 ) c6.
+
 
 (* 
    S'il vous reste du temps vous pouvez traiter les exercices optionnels 
