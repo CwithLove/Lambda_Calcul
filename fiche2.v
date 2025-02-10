@@ -65,29 +65,45 @@ Compute equiv_lexp ( cor ctr cfa ) ctr.
 Compute equiv_lexp ( cor cfa cfa ) cfa.
 
 (* Bonus *)
+
 (*
 Exercice 3- Codage non factorise
 *)
 Definition cand_nf := \a b~cif a (cif b ctr cfa) cfa. 
 Definition cor_nf := \a b~cif a ctr (cif b ctr cfa).
+Definition cnot_nf := \a~cif a cfa ctr.
 
-(* Exercice 4 - Tester *)
-(* Verifier cand par rapport a la table de verite *)
+(* 
+Exercice 4 - Tester cand_nf, cor_nf, cnot_nf
+ *)
+
+(* Verifier cand_nf par rapport a la table de verite *)
 Compute equiv_lexp ( cand_nf ctr ctr ) ctr.
 Compute equiv_lexp ( cand_nf cfa ctr ) cfa.
 Compute equiv_lexp ( cand_nf ctr cfa ) cfa.
 Compute equiv_lexp ( cand_nf cfa cfa ) cfa.
 
-(* Format equiv_lexp (expression) output-expectation *)
-(* Verifier cor par rapport a la table de verite *)
+(* Verifier cor_nf par rapport a la table de verite *)
 Compute equiv_lexp ( cor_nf ctr ctr ) ctr.
 Compute equiv_lexp ( cor_nf cfa ctr ) ctr.
 Compute equiv_lexp ( cor_nf ctr cfa ) ctr.
 Compute equiv_lexp ( cor_nf cfa cfa ) cfa.
 
+(* Verifier cnot_nf *)
+Compute equiv_lexp (cnot_nf cfa) ctr.
+Compute equiv_lexp (cnot_nf ctr) cfa.
 
+(* 
+Exercice 5 - Codage cor compacte
+*)
+Definition cor_compacte := \a~a ctr.
 
-(* A COMPLETER *)
+(* Verifier cor_compacte *)
+Compute equiv_lexp ( cor_compacte ctr ctr ) ctr.
+Compute equiv_lexp ( cor_compacte cfa ctr ) ctr.
+Compute equiv_lexp ( cor_compacte ctr cfa ) ctr.
+Compute equiv_lexp ( cor_compacte cfa cfa ) cfa.
+
 
 (*********************************************************)
 (**************** III - Codage des entiers ***************)
@@ -167,6 +183,7 @@ Definition cmult := \n m~\f~n (m f).
 
 Definition c8 := csucc c7.
 Definition c9 := csucc c8.
+Definition c10 := csucc c9.
 
 
 (* Verifier cas c0 * cx et cx * c0 *)
@@ -204,13 +221,80 @@ Compute equiv_lexp ( cmult c4 c4 ) (cadd c12 c4).
 Exercice 3 -  Tester cadd et cmult sur des booléens. Les résultats ont-ils du sens ?
 *)
 
+Compute red_cbn ( cadd ctr ctr ).
 Compute red_cbn ( cadd ctr cfa ).
+Compute red_cbn ( cadd cfa cfa ).
 Compute red_cbn ( cmult ctr ctr ).
+Compute red_cbn ( cmult ctr cfa ).
+Compute red_cbn ( cmult cfa cfa ).
 
-(* Non *)
+(* Non, il y a pas de sens arithmetique, le codage de bool est utilise pour un autre
+objectif. Deplus, quand on fait cadd bool et bool, on obtient les expressions redexes 
+correspond respectivement a ctr ctr cfa mais leur interpretation arithmetique n'a 
+aucun sens  *)
 
 (* Bonus *)
-(* A COMPLETER *)
+(*
+Exercice 4: Preuve de la commutativite de cadd et de cmult
+Pour chaque cadd et cmult, je fais 2 preuves differente
+
+CADD:
+  Pour tout nombre entier de Church a et b, on a
+    (cadd a b) = (\n m~\f x~n f (m f x)) a b = \f x~a f (b f x)
+    => f^(a) ( f^(b) (x) ) = f^(a+b) (x)
+    (cadd b a) = (\n m~\f x~n f (m f x)) b a = \f x~b f (a f x)
+    => f^(b) ( f^(a) (x) ) = f^(b+a) (x)
+  Alors (cadd a b) = (cadd b a)
+
+CMULT: 
+    Pour tout nombre entier de Church a et b, on a
+    (cmult a b) = (\n m~\f~n (m f)) a b = \f~a (b f)
+    => (b f)^(a) = (f^(b))^a = f^(b*a)
+    (cmult b a) = (\n m~\f~n (m f)) b a = \f~b (a f)
+    => (a f)^(b) = (f^(a))^b = f^(a*b)
+  Alors (cmult a b) = (cmult b a)
+*)
+
+(*
+Exercice 5: Codage de l'exponentielle
+*)
+
+Definition cexp := \n m~m n.
+
+(* Verifier cexp *)
+(* Verifier cas c0^n et n^c0 *)
+Compute equiv_lexp ( cexp c0 c1 ) c0.
+Compute equiv_lexp ( cexp c0 c5 ) c0.
+Compute equiv_lexp ( cexp c0 c8 ) c0.
+Compute equiv_lexp ( cexp c0 c10 ) c0.
+Compute equiv_lexp ( cexp c0 c12 ) c0.
+
+(* Observer cn^0 qui renvoie la fonction identite *)
+Compute red_cbn (cexp c3 c0).
+
+(* Verifier cas cn^c1 *)
+Compute equiv_lexp ( cexp c1 c1 ) c1.
+Compute equiv_lexp ( cexp c2 c1 ) c2.
+Compute equiv_lexp ( cexp c3 c1 ) c3.
+Compute equiv_lexp ( cexp c4 c1 ) c4.
+Compute equiv_lexp ( cexp c5 c1 ) c5.
+Compute equiv_lexp ( cexp c6 c1 ) c6.
+
+(* Verfier cas c1^cn *)
+Compute equiv_lexp ( cexp c1 c1 ) c1.
+Compute equiv_lexp ( cexp c1 c3 ) c1.
+Compute equiv_lexp ( cexp c1 c5 ) c1.
+Compute equiv_lexp ( cexp c1 c6 ) c1.
+Compute equiv_lexp ( cexp c1 c8 ) c1.
+Compute equiv_lexp ( cexp c1 c10 ) c1.
+
+(* Verifier cas cn^cm *)
+Compute equiv_lexp ( cexp c2 c2 ) c4.
+Compute equiv_lexp ( cexp c2 c3 ) c8.
+Compute equiv_lexp ( cexp c3 c2 ) c9.
+Definition c16 := cadd c12 c4.
+Definition c27 := cadd c16 (cadd c10 c1).
+Compute equiv_lexp ( cexp c3 c3 ) c27.
 
 (*********************************************************)
 (************** V - Opérateurs de comparaison ************)
@@ -230,7 +314,7 @@ Compute equiv_lexp ( ceq0 c0 ) ctr.
 
 
 (*********************************************************)
-(******** V - Structures de données - les couples ********)
+(******** VI - Structures de données - les couples ********)
 (*********************************************************)
 (*
 Exercice 1 - Coder dans Coq la fonction cpl rendant un couple formé de ses deux 
@@ -276,16 +360,17 @@ Definition cpltf := cpl ctr cfa.
 Definition cplff := cpl cfa cfa.
 
 (*
-Tester cpland sur les couples (false,true) et (true,true) .
+Tester cpland sur les couples (false,true) et (true,true) 
+et le reste de la table de verite.
 *)
-Compute equiv_lexp ( cpland cplft ) cfa.
 Compute equiv_lexp ( cpland cpltt ) ctr.
+Compute equiv_lexp ( cpland cplft ) cfa.
 Compute equiv_lexp ( cpland cpltf ) cfa.
 Compute equiv_lexp ( cpland cplff ) cfa.
 
 
 (*********************************************************)
-(************** VI - Codage du prédécesseur **************)
+(************** VII - Codage du prédécesseur **************)
 (*********************************************************)
 (*
 Exercice 1 - Coder dans Coq la fonction iter qui prend un entier de Church n, une
@@ -353,10 +438,66 @@ Compute equiv_lexp ( cpred c7 ) c6.
 Compute equiv_lexp ( cpred c8 ) c7.
 Compute equiv_lexp ( cpred (cmult c5 c6) ) (cadd (cmult c3 c9) c2).
 Compute equiv_lexp ( cpred_simple c8 ) c7.
+Compute equiv_lexp ( cpred_simple c1 ) c0.
+Compute equiv_lexp ( cpred_simple c2 ) c1.
+Compute equiv_lexp ( cpred_simple c3 ) c2.
+Compute equiv_lexp ( cpred_simple c4 ) c3.
+Compute equiv_lexp ( cpred_simple c5 ) c4.
+Compute equiv_lexp ( cpred_simple c6 ) c5.
+Compute equiv_lexp ( cpred_simple c7 ) c6.
+Compute equiv_lexp ( cpred_simple c8 ) c7.
 
+(* Bonus *)
+(*
+Exercice 4 - Codage de la soustraction
+*)
+Definition csous := \n m~iter m cpred n.
+
+(* Verifier cas cn - c0 *)
+Compute equiv_lexp (csous c1 c0) c1.
+Compute equiv_lexp (csous c3 c0) c3.
+Compute equiv_lexp (csous c5 c0) c5.
+Compute equiv_lexp (csous c7 c0) c7.
+Compute equiv_lexp (csous c9 c0) c9. 
+
+(* Verifier cas c0 - cn ## Ca devait etre 0 dans tous les cas *)
+Compute equiv_lexp (csous c0 c0) c0.
+Compute equiv_lexp (csous c0 c9) c0.
+Compute equiv_lexp (csous c0 c1) c0.
+Compute equiv_lexp (csous c0 c4) c0.
+Compute equiv_lexp (csous c0 c5) c0.
+
+(* Verifier cas cn - cm *)
+Compute equiv_lexp (csous c1 c1) c0.
+Compute equiv_lexp (csous c9 c5) c4.
+Compute equiv_lexp (csous c9 c7) c2.
+Compute equiv_lexp (csous c9 c4) c5.
+
+(* Les cas cn - cm avec cm > cn ## Pareil que c0 - cn *)
+Compute equiv_lexp (csous c1 c10) c0.
+Compute equiv_lexp (csous c2 c9) c0.
+Compute equiv_lexp (csous c3 c8) c0.
+Compute equiv_lexp (csous c4 c7) c0.
+
+(* 
+Exercice 5 - Codage de la definition du inferieur ou egal
+*)
+Definition leq := \n m~ceq0 (csous n m).
+
+(* Verifier des cas vrai *)
+Compute equiv_lexp (leq c0 c5) ctr.
+Compute equiv_lexp (leq c1 c4) ctr.
+Compute equiv_lexp (leq c2 c9) ctr.
+Compute equiv_lexp (leq c3 c10) ctr.
+
+(* Verifier des cas faux *)
+Compute equiv_lexp (leq c4 c1) cfa.
+Compute equiv_lexp (leq c3 c2) cfa.
+Compute equiv_lexp (leq c5 c0) cfa.
+Compute equiv_lexp (leq c9 c5) cfa.
 
 (*********************************************************)
-(************ VII - Combinateur de point fixe ************)
+(************ VIII - Combinateur de point fixe ************)
 (*********************************************************)
 (*
 Exercice 2 - Définir dans Coq  Y comme une lexp
@@ -377,7 +518,7 @@ Compute red_cbn ( Y c1 ).
 
 
 (*********************************************************)
-(******* VII - Codage de définitions récursives  *********)
+(******* IX - Codage de définitions récursives  *********)
 (*********************************************************)
 (*
 Exercice 1 - En utilisant les opérateurs définis précédemment (cif, ceq0, cmult, cpred), 
@@ -407,6 +548,41 @@ Compute equiv_lexp ( cfact c2 ) c2.
 Compute equiv_lexp ( cfact c3 ) c6.
 
 
+(*********************************************************)
+(************** X - Structure de donnees  ****************)
+(*********************************************************)
+(*** 6.2 Type somme: entier ou boolean ***)
 (* 
-   S'il vous reste du temps vous pouvez traiter les exercices optionnels 
+Exercice 1 - Codage des injections
 *)
+Definition injA := \x~\k1 k2~k1 x.
+Definition injB := \x~\k1 k2~k2 x.
+
+(* 
+Exercice 2
+*)
+Definition cdouble := \x~cadd x x.
+Definition inj := \i~i cdouble cnot.
+(* Tester *)
+Compute equiv_lexp (inj (injA c1) ) c2.
+Compute equiv_lexp (inj (injA c2) ) (csucc c3).
+Compute equiv_lexp (inj (injB cfa) ) ctr.
+Compute equiv_lexp (inj (injB ctr) ) cfa.
+
+(*** 6.3 Type donnee optionnelle ***)
+(* 
+Exercice 1: Codage
+*)
+Definition Some_x := \x~\k1 k2~k1 x.
+Definition None := \k1 k2~k2.
+
+(*
+Exercice 2:
+*)
+Definition osucc := \n~cif (cand (cnot n) ctr) (Some_x c0) (Some_x (csucc n)).
+
+Compute equiv_lexp (osucc c0) (Some_x c1). 
+Compute equiv_lexp (osucc None) (Some_x c0).
+
+(*** 6.4 Type algebrique: Les arbres binaires ***)
+
