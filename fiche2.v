@@ -1,3 +1,4 @@
+
 (*********************************************************)
 (********************** Fiche 2 **************************)
 (*********************************************************)
@@ -573,16 +574,70 @@ Compute equiv_lexp (inj (injB ctr) ) cfa.
 (* 
 Exercice 1: Codage
 *)
-Definition Some_x := \x~\k1 k2~k1 x.
-Definition None := \k1 k2~k2.
+Definition Some := \x~\k1 k2~k1 x.
+Definition None := \k1 k2~k2.  
 
 (*
-Exercice 2:
+Exercice 2: Fonction qui prend en entree cn renvoie 
+            Some c0 si Null, Some cn + 1 sinon
 *)
-Definition osucc := \n~cif (cand (cnot n) ctr) (Some_x c0) (Some_x (csucc n)).
+Definition osucc := \n~n (\k~Some (csucc n)) (Some c0).
+(* Verifier cas particulier c0 *)
+Compute equiv_lexp (osucc None) (Some c0).
+Compute equiv_lexp (osucc c0) (Some c0). (*None a le meme format que c0*)
 
-Compute equiv_lexp (osucc c0) (Some_x c1). 
-Compute equiv_lexp (osucc None) (Some_x c0).
+(* Verifier cas general *)
+Compute equiv_lexp (osucc c1) (Some c2).
+Compute equiv_lexp (osucc c2) (Some c3).
+Compute equiv_lexp (osucc c4) (Some c5).
+Compute equiv_lexp (osucc c7) (Some c8).
+Compute equiv_lexp (osucc (cmult c3 c6)) (Some (csous (cmult c4 c5) c1)).
 
 (*** 6.4 Type algebrique: Les arbres binaires ***)
+(*
+Exercice 1: Codage de la feuille et du noeud
+*)
+Definition cleaf := \n k1 k2~k1 n.
+Definition cnode := \l r k1 k2~k2 l r.
+Definition arb1 := cnode (cnode (cleaf c1) (cleaf c2)) (cleaf c3).
+Definition arb_simple := cnode (cleaf c1) (cleaf c2).
+(*
+Exercice 2: Codage de la fonction isleaf
+*)
+Definition isleaf := \a~a (\n~ctr) (\l r~cfa).
+
+Definition arb2 := cnode (cleaf c4) (cnode (cleaf c5) (cleaf c6)).
+Definition arb3 := cnode (cnode (cleaf c7) (cleaf c8)) (cleaf c9).
+Definition arb4 := cnode (cnode (cleaf c10) (cnode (cleaf c1) (cleaf c12))) (cleaf c3).
+
+(* Verifier isleaf avec les feuille *)
+Compute equiv_lexp (isleaf (cleaf c1)) ctr.
+Compute equiv_lexp (isleaf (cleaf c3)) ctr.
+Compute equiv_lexp (isleaf (cleaf c12)) ctr.
+
+(* Verifier isleaf avec les arbres *)
+Compute equiv_lexp (isleaf arb1) cfa.
+Compute equiv_lexp (isleaf arb2) cfa.
+Compute equiv_lexp (isleaf arb3) cfa.
+Compute equiv_lexp (isleaf arb4) cfa.
+
+(*
+Exercice 3: Codage de la fonction sumTree
+*)
+Definition sumTree := (\f a~ a (\n~n) (\l r~cadd (f l) (f r))).
+Definition SumTree := Y sumTree.
+
+(* Verifier avec les arbres *)
+Compute equiv_lexp (SumTree arb1) c6.
+Compute equiv_lexp (SumTree arb_simple) c3.
+Compute equiv_lexp (SumTree arb2) (cadd c12 c3).
+
+
+
+
+
+
+
+
+
 
