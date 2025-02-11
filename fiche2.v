@@ -162,7 +162,7 @@ Compute equiv_lexp ( cadd c0 c4 ) c4.
 Compute equiv_lexp ( cadd c5 c0 ) c5.
 Compute equiv_lexp ( cadd c6 c0 ) c6.
 Compute equiv_lexp ( cadd c7 c0 ) c7.
-Compute equiv_lexp ( cadd c2 c ) c5.
+Compute equiv_lexp ( cadd c2 c0 ) c2.
 
 (* Verifier cas general ci + cj *)
 Compute equiv_lexp ( cadd c1 c2 ) c3.
